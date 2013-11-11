@@ -1,0 +1,17 @@
+<!-- We can make this a jQuery fade in and fade out notice saying something like "Successfuly updated" -->
+<p id="notice"></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.first_name @user.last_name %>
+</p>
+
+
+<p>FAVORITES</p>
+
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+<%= link_to 'Delete Account', user, method: :delete, data: { confirm: 'Are you sure?' } %>
