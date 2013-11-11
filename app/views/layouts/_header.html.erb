@@ -17,9 +17,31 @@
           <%= link_to "LOG OUT", "/logout" %>
         <!-- else in erb brackets here -->
         <!-- TODO Not sure if the paths will be different if we are doing a dynamic sign up and log in with AJAX -->
-          <%= link_to "SIGN UP", "/users/new" %>
+
+          <!-- SIGNUP -->
+
+          <a href="#" class="signup-btn">SIGN UP</a>
+            <div class="signup-content">
+              <form name="signup-form" action="" method="post">
+                <input type="email" name="email" value="" placeholder="Email" />
+                <input type="password" name="password" value="" placeholder="Password"/>
+                <input type="password" name="password_confirmation" value="" placeholder="Password"/>
+                <input type="submit" value="Sign Up" class="form-signup" />
+              </form>
+            </div>
+
+
           <!-- right now there is no login path -->
-          <%= link_to "LOG IN", "/login" %>
+
+          <!-- LOGIN -->
+          <a href="#" class="login-btn">LOG IN</a>
+            <div class="login-content">
+              <form name="login-form" action="" method="post">
+                <input type="email" name="email" value="" placeholder="Email"/>
+                <input type="password" name="password" value="" placeholder="Password"/>
+                <input type="submit" name="login" value="Log In" class="form-login" />
+              </form>
+            </div>
         <!-- end in erb brackets here -->
       </p>
       </div>
