@@ -9,7 +9,10 @@
 <!-- position on right -->
     <div class="top_right_links">
     <p>
-      <!-- TODO : add the  if current_user method in erb brackets to show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
+
+
+<!--  <div id="container"> -->
+  <!-- TODO : add the  if current_user method in erb brackets to show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
         <!-- if current_user in erb brackets here -->
         <!-- change root_path route to current_user -->
           <%= link_to "FAVORITES", root_path  %>
@@ -17,31 +20,26 @@
           <%= link_to "LOG OUT", "/logout" %>
         <!-- else in erb brackets here -->
         <!-- TODO Not sure if the paths will be different if we are doing a dynamic sign up and log in with AJAX -->
+  <div id="topnav"class="topnav"> Have an account? <a href="login"class="signin"><span>LOG IN</span></a> </div>
+  <fieldset id="signin_menu">
+    <form method="post"id="signin"action="/login">
+      <label for="username">Email</label>
+      <input id="username"name="email"value=""title="username"tabindex="4"type="text">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input id="password"name="password"value=""title="password"tabindex="5"type="password">
+      </p>
+      <p class="remember">
+        <input id="signin_submit"value="Sign in"tabindex="6"type="submit">
+        <input id="remember"name="remember_me"value="1"tabindex="7"type="checkbox">
+        <label for="remember">Remember me</label>
+      </p>
+    </form>
+  </fieldset>
+<!-- </div> -->
 
-          <!-- SIGNUP -->
 
-          <a href="#" class="signup-btn">SIGN UP</a>
-            <div class="signup-content">
-              <form name="signup-form" action="" method="post">
-                <input type="email" name="email" value="" placeholder="Email" />
-                <input type="password" name="password" value="" placeholder="Password"/>
-                <input type="password" name="password_confirmation" value="" placeholder="Password"/>
-                <input type="submit" value="Sign Up" class="form-signup" />
-              </form>
-            </div>
-
-
-          <!-- right now there is no login path -->
-
-          <!-- LOGIN -->
-          <a href="#" class="login-btn">LOG IN</a>
-            <div class="login-content">
-              <form name="login-form" action="" method="post">
-                <input type="email" name="email" value="" placeholder="Email"/>
-                <input type="password" name="password" value="" placeholder="Password"/>
-                <input type="submit" name="login" value="Log In" class="form-login" />
-              </form>
-            </div>
         <!-- end in erb brackets here -->
       </p>
       </div>

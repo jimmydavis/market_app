@@ -1,56 +1,20 @@
 $(document).ready(function() {
-    $('#market').accordion();
 
-$(".login-btn").hover(
-    function() {
-        clearTimeout($(this).data('hoverTimeoutId'));
-        $(".login-content").show();
-        $(this).addClass('hovered');
-    },
-    function() {
-        clearTimeout($(this).data('hoverTimeoutId'));
-        $(this).data('hoverTimeoutId', setTimeout(function () {
-            $(".login-content").hide();
-            $(this).removeClass('hovered');
-        } ,500));
+    // $('#market').accordion();
+
+    $(".signin").click(function(e) {
+        e.preventDefault();
+        $("fieldset#signin_menu").toggle();
+        $(".signin").toggleClass("menu-open");
     });
-
-
-$('.login-content').hover(
-    function(){
-        clearTimeout($(".login-btn").data('hoverTimeoutId'));
-    },
-    function(){
-        $(".login-content").hide();
-        $(".login-btn").removeClass('hovered');
+    $("fieldset#signin_menu").mouseup(function() {
+        return false
     });
-
-// Can probably refactor this since it is the same for both login and signup
-
-$(".signup-btn").hover(
-    function() {
-        clearTimeout($(this).data('hoverTimeoutId'));
-        $(".signup-content").show();
-        $(this).addClass('hovered');
-    },
-    function() {
-        clearTimeout($(this).data('hoverTimeoutId'));
-        $(this).data('hoverTimeoutId', setTimeout(function () {
-            $(".signup-content").hide();
-            $(this).removeClass('hovered');
-        } ,500));
-    });
-
-
-$('.signup-content').hover(
-    function(){
-        clearTimeout($(".signup-btn").data('hoverTimeoutId'));
-    },
-    function(){
-        $(".signup-content").hide();
-        $(".signup-btn").removeClass('hovered');
+    $(document).mouseup(function(e) {
+        if($(e.target).parent("a.signin").length==0) {
+            $(".signin").removeClass("menu-open");
+            $("fieldset#signin_menu").hide();
+        }
     });
 
 });
-
-
