@@ -2,18 +2,34 @@ $(document).ready(function() {
 
     // $('#market').accordion();
 
-    $(".signin").click(function(e) {
+    $(".login").click(function(e) {
         e.preventDefault();
-        $("fieldset#signin_menu").toggle();
-        $(".signin").toggleClass("menu-open");
+        $("fieldset#login_menu").toggle();
+        $(".login").toggleClass("menu-open");
     });
-    $("fieldset#signin_menu").mouseup(function() {
+    $("fieldset#login_menu").mouseup(function() {
         return false
     });
     $(document).mouseup(function(e) {
-        if($(e.target).parent("a.signin").length==0) {
-            $(".signin").removeClass("menu-open");
-            $("fieldset#signin_menu").hide();
+        if($(e.target).parent("a.login").length==0) {
+            $(".login").removeClass("menu-open");
+            $("fieldset#login_menu").hide();
+        }
+    });
+
+
+    $(".signup").click(function(e) {
+        e.preventDefault();
+        $("fieldset#signup_menu").toggle();
+        $(".signup").toggleClass("menu-open");
+    });
+    $("fieldset#signup_menu").mouseup(function() {
+        return false
+    });
+    $(document).mouseup(function(e) {
+        if($(e.target).parent("a.signup").length==0) {
+            $(".signup").removeClass("menu-open");
+            $("fieldset#signup_menu").hide();
         }
     });
 

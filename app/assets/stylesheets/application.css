@@ -39,7 +39,7 @@ positioned top left of nav bar*/
   position: relative;
 }
 
-/*this is the login/signup/signin links within nav*/
+/*this is the login/signup/login links within nav*/
 .top_right_links {
   float: right;
   margin: 25px 60px;
@@ -56,7 +56,7 @@ positioned top left of nav bar*/
 
 
 
- /*THIS BEGINS CODE FOR SIGNIN DROPDOWN*/
+ /*THIS BEGINS CODE FOR login DROPDOWN*/
 
 #container {
     width:780px;
@@ -84,7 +84,7 @@ a img {
     line-height:23px;
     text-align:right;
 }
-#topnav a.signin {
+#topnav a.login {
     background:#88bbd4;
     padding:4px 6px 6px;
     text-decoration:none;
@@ -93,23 +93,23 @@ a img {
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    *background:transparent url("images/signin-nav-bg-ie.png") no-repeat 0 0;
+    *background:transparent url("images/login-nav-bg-ie.png") no-repeat 0 0;
     *padding:4px 12px 6px;
 }
-#topnav a.signin:hover {
+#topnav a.login:hover {
     background:#59B;
-    *background:transparent url("images/signin-nav-bg-hover-ie.png") no-repeat 0 0;
+    *background:transparent url("images/login-nav-bg-hover-ie.png") no-repeat 0 0;
     *padding:4px 12px 6px;
 }
-#topnav a.signin, #topnav a.signin:hover {
+#topnav a.login, #topnav a.login:hover {
     *background-position:0 3px!important;
 }
 
-a.signin {
+a.login {
     position:relative;
     margin-left:3px;
 }
-a.signin span {
+a.login span {
     background-image:url("images/toggle_down_light.png");
     background-repeat:no-repeat;
     background-position:100% 50%;
@@ -127,12 +127,12 @@ a.signin span {
     margin:25px 0 0;
     width:170px;
 }
-a.signin.menu-open span {
+a.login.menu-open span {
     background-image:url("images/toggle_up_dark.png");
     color:#789;
 }
 
-#signin_menu {
+#login_menu, #signup_menu {
     -moz-border-radius-topleft:5px;
     -moz-border-radius-bottomleft:5px;
     -moz-border-radius-bottomright:5px;
@@ -156,7 +156,7 @@ a.signin.menu-open span {
     font-size:11px;
 }
 
-#signin_menu input[type=text], #signin_menu input[type=password] {
+#login_menu input[type=text], #login_menu input[type=password] {
     display:block;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
@@ -166,26 +166,26 @@ a.signin.menu-open span {
     padding:5px;
     width:203px;
 }
-#signin_menu p {
+#login_menu p {
     margin:0;
 }
-#signin_menu a {
+#login_menu a {
     color:#6AC;
 }
-#signin_menu label {
+#login_menu label {
     font-weight:normal;
 }
-#signin_menu p.remember {
+#login_menu p.remember {
     padding:10px 0;
 }
-#signin_menu p.forgot, #signin_menu p.complete {
+#login_menu p.forgot, #login_menu p.complete {
     clear:both;
     margin:5px 0;
 }
-#signin_menu p a {
+#login_menu p a {
     color:#27B!important;
 }
-#signin_submit {
+#login_submit {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     background:#39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
@@ -197,15 +197,15 @@ a.signin.menu-open span {
     margin:0 5px 0 0;
     font-weight:bold;
 }
-#signin_submit::-moz-focus-inner {
+#login_submit::-moz-focus-inner {
 padding:0;
 border:0;
 }
-#signin_submit:hover, #signin_submit:focus {
+#login_submit:hover, #login_submit:focus {
     background-position:0 -5px;
     cursor:pointer;
 }
 
-/*THIS ENDS CSS CODE FOR SIGNIN DROPDOWN*/
+/*THIS ENDS CSS CODE FOR login DROPDOWN*/
 
 

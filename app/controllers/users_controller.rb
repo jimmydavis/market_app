@@ -52,6 +52,7 @@ class UsersController < ApplicationController
       format.html # new.html.erb
       format.json { render json: { first_name: nil, last_name: nil, email: nil, latitude: nil, longitude: nil } }
     end
+    redirect_to root_path
   end
 
 
@@ -87,6 +88,7 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url }
       format.json { render json: {success: true} } # Note that even though i have destoryed, the *object* is still accessible
     end
+    redirect_to root_path
   end
 
 
