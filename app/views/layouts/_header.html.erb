@@ -1,0 +1,27 @@
+<header>
+  <div class="header">
+<!-- position on left -->
+      <div class="title">
+        <p class="title_text"><%= link_to "Market App", root_path %></p>
+      </div>
+
+
+<!-- position on right -->
+    <div class="top_right_links">
+    <p>
+      <!-- TODO : add the  if current_user method in erb brackets to show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
+        <!-- if current_user in erb brackets here -->
+        <!-- change root_path route to current_user -->
+          <%= link_to "FAVORITES", root_path  %>
+          <!-- right now there is no logout -->
+          <%= link_to "LOG OUT", "/logout" %>
+        <!-- else in erb brackets here -->
+        <!-- TODO Not sure if the paths will be different if we are doing a dynamic sign up and log in with AJAX -->
+          <%= link_to "SIGN UP", "/users/new" %>
+          <!-- right now there is no login path -->
+          <%= link_to "LOG IN", "/login" %>
+        <!-- end in erb brackets here -->
+      </p>
+      </div>
+    </div>
+  </header>
