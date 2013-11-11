@@ -52,7 +52,6 @@ class UsersController < ApplicationController
       format.html # new.html.erb
       format.json { render json: { first_name: nil, last_name: nil, email: nil, latitude: nil, longitude: nil } }
     end
-    redirect_to root_path
   end
 
 

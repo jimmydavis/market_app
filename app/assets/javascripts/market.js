@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // $('#market').accordion();
 
-    $(".login").click(function(e) {
+    $(".login").on("click", function(e) {
         e.preventDefault();
         $("fieldset#login_menu").toggle();
         $(".login").toggleClass("menu-open");
@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
 
 
-    $(".signup").click(function(e) {
+    $(".signup").on("click", function(e) {
         e.preventDefault();
         $("fieldset#signup_menu").toggle();
         $(".signup").toggleClass("menu-open");
@@ -34,3 +34,32 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+$(document).ready(function(){
+  $("#signup").on("submit", createUser);
+});
+
+
+var createUser = function(e) {
+  e.preventDefault();
+  var email = $("#email").val();
+
+
+  var newUserParams = {
+    user: {
+      email: email,
+    }
+  }
+debugger
+  $.ajax({
+    type: "POST",
+    url: "/users.json",
+    data: newUserParams
+  }).done(function(data) {
+  console.log(data);
+  $("form")[0].reset();
+  // $("#notice").append($("<p>").text("Created " + data.name).delay(2000).fadeOut(400));
+});
+}
