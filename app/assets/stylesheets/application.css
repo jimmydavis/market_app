@@ -47,13 +47,15 @@ positioned top left of nav bar*/
 .map-container {
     height: 500px;
     width: 500px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+    margin: 0 auto;
+    float: left;
 }
 
 #map-canvas {
     padding-left: 10px;
     margin-left: 70px;
-    width: 45%;
+    width: 95%;
     height: 490px;
 }
 
@@ -71,6 +73,7 @@ positioned top left of nav bar*/
   width: 450px;
   height: 500px;
   margin-right: 20px;
+  float: left;
  }
 
 
@@ -223,5 +226,4 @@ border:0;
 }
 
 /*THIS ENDS CSS CODE FOR login/signup DROPDOWN*/
-
 

@@ -1,6 +1,6 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  maps.makeNycMap();
-  maps.addPins();
+//   maps.makeNycMap();
+//   maps.addPins();
 
-});
+// });
