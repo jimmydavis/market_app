@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    // $('#market').accordion();
 
 // When you click on "LOG IN" link in header
 // it will toggle the form to log in
@@ -38,23 +37,21 @@ $(document).mouseup(function(e) {
 });
 
 });
-
-
-
   // When you click the sign up button on the form
   // It should create a new user in the database
   $("#signup_form").on("submit", createUser);
 
-
-
 var createUser = function(e) {
   e.preventDefault();
-  var $email = $("#signup_email").val();
-
+  var email = $("#signup_email").val();
+  var pWord = $("#signup_password").val();
+  var pWordConfirmation = $("#password_confirmation").val();
 
   var newUserParams = {
     user: {
-      email: $email,
+      email: email,
+      password: pWord,
+      password_confirmation: pWordConfirmation
     }
   };
 
@@ -64,7 +61,12 @@ var createUser = function(e) {
     data: newUserParams
   }).done(function(data) {
     console.log(data);
-    // $("form")[0].reset();
+    $("#signup_form")[0].reset();
+  // the below line would fade in and fade out a notice that says "Created user.name"
   // $("#notice").append($("<p>").text("Created " + data.name).delay(2000).fadeOut(400));
+  // # TODO make the login and signup disappear and make the favorites and logout appear
 });
 };
+
+// I want to have the flash notices fade out after a user logs in and logs out
+// $("#notice_container").delay(2000).fadeOut(400));

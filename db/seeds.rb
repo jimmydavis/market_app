@@ -3,9 +3,8 @@ require "csv"
 Market.delete_all
 
 # TODO -- may need to change path to get this to work in Heroku
-
 # file = File.open("/Users/thomasmetzger/ga_wdi/heroku/market_app/db/20131111_nycmarket.csv","r")
-file = File.open("/Users/KS/ga_wdi/market_app/db/20131111_nycmarket.csv","r")
+# file = File.open("/Users/thomasmetzger/ga_wdi/heroku/market_app/db/20131111_nycmarket.csv","r")
 
 # file = File.open("/Users/jamesmdavis5/ga_wdi/heroku/project_two/market_app/db/20131111_nycmarket.csv","r")
 
