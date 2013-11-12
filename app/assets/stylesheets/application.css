@@ -14,6 +14,11 @@
 
  /*just going to do CSS in here for now*/
 
+.main-body {
+    width: 1500px;
+    height: 2000px;
+}
+
 .header {
   display :inline-block;
   background-color: #f3f3f3;
@@ -39,6 +44,13 @@ positioned top left of nav bar*/
   position: relative;
 }
 
+#map-canvas {
+    padding-left: 10px;
+    margin-left: 70px;
+    width: 45%;
+    height: 500px;
+}
+
 /*this is the login/signup/login links within nav*/
 .top_right_links {
   float: right;
@@ -50,7 +62,7 @@ positioned top left of nav bar*/
  #left-hand-box {
   border: 1px solid black;
   float: left;
-  width: 50%;
+  width: 45%;
   height: 500px;
  }
 

@@ -8,6 +8,7 @@ MarketApp::Application.routes.draw do
   get '/dashboard' => "users#show"
 
   resources :users
+  resources :markets
 
 end
 #== Route Map
