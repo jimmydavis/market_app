@@ -49,12 +49,19 @@ $(document).ready(function(){
 
 var createUser = function(e) {
   e.preventDefault();
-  var $email = $("#signup_email").val();
+  var email = $("#signup_email").val();
+  var pWord = $("#signup_password").val();
+  var pWordConfirmation = $("#password_confirmation").val();
 
+// I think the problem is that I need to assign password and password confirmation when the user is created,
+// but you can't mass-assign protected params
+// Error I am getting is that password digest, password, password confirmation can't be blank
 
   var newUserParams = {
     user: {
-      email: $email,
+      email: email,
+      password: pWord,
+      password_confirmation: pWordConfirmation
     }
   }
   $.ajax({
@@ -63,7 +70,9 @@ var createUser = function(e) {
     data: newUserParams
   }).done(function(data) {
     console.log(data);
-    // $("form")[0].reset();
+    $("#signup_form")[0].reset();
+  // the below line would fade in and fade out a notice that says "Created user.name"
   // $("#notice").append($("<p>").text("Created " + data.name).delay(2000).fadeOut(400));
+  // # TODO make the login and signup disappear and make the favorites and logout appear
 });
 }
