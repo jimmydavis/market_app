@@ -27,15 +27,29 @@ googleMap.createMap = function() {
 // adds pins to the map for each of the market points
 googleMap.addPins = function() {
 
-  var myLatlng = new google.maps.LatLng(40.7397346, -73.9897422);
+  // ajax get for all users
+  $.ajax({
+    dataType: "json",
+    type: "GET",
+    url: "/markets"
+  }).done(function(markets){
+    $.each(markets, function(i, market){
+      var marketName = market.market_name;
+      var marketId = market.id;
+      market.id =
 
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    title:"Hello World!"
+      var marketLatLng = new google.maps.LatLng(market.latitude, market.longitude);
+      var marker = new google.maps.Marker({
+        position: marketLatLng,
+        title: marketName
+      });
+      marker.setMap(map);
+    });
   });
-
-  marker.setMap(map);
 };
+
+
+
 
 // ###########################################################################################
 //      TODO
@@ -43,6 +57,8 @@ googleMap.addPins = function() {
   // in addPinsfn ajax get request for all markets
   // -- use that data to create markets in a for loop
   // -- create a hover eventListener that will display neighborhood and number of markets in popup
+
+
 
   // create a function to pull data for a specific neighborhood
   // display it in the LHB
