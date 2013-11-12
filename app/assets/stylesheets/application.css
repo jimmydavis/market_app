@@ -15,8 +15,8 @@
  /*just going to do CSS in here for now*/
 
 .main-body {
-    margin: 0 auto;
-    width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .header {
@@ -38,10 +38,10 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-    font-family: 'Titan One', cursive;
-    letter-spacing: .05em;
-    font-size: 36px;
-    position: relative;
+  font-family: 'Titan One', cursive;
+  letter-spacing: .05em;
+  font-size: 36px;
+  position: relative;
 }
 
 #notice_container {
@@ -62,18 +62,17 @@ positioned top left of nav bar*/
 
 
 .map-container {
-    height: 500px;
-    width: 500px;
-    /*margin-left: 20px;*/
-    margin: 0 auto;
-    float: left;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  float: left;
 }
 
 #map-canvas {
-    padding-left: 10px;
-    margin-left: 70px;
-    width: 95%;
-    height: 490px;
+  padding-left: 10px;
+  margin-left: 70px;
+  width: 95%;
+  height: 490px;
 }
 
 /*this is the login/signup/login links within nav*/
@@ -84,15 +83,25 @@ positioned top left of nav bar*/
   padding: 10px;
 }
 
-
- #left-hand-box {
+/* left hand side on the homepage */
+.left-hand-box {
   border: 1px solid black;
   float: left;
   width: 450px;
   height: 500px;
   margin-right: 20px;
   float: left;
- }
+}
+
+
+
+.info-text h2 {
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
 
 
 
