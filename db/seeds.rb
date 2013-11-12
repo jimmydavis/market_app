@@ -22,6 +22,9 @@ CSV.parse(file, :headers => true) do |row|
     :days_between_markets => row["days_between_markets"],
     :season_date_range => row["season_date_range"]})
 
+# this code will query the newly created Market table data to retrieve data that will be used to create the data that will seed the Date table
+# connection = ActiveRecord::Base.connection();
+# sql_result = connection.execute("select id, season_date_range, days_between_markets from markets;")
 
 
 
