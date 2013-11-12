@@ -44,6 +44,23 @@ positioned top left of nav bar*/
     position: relative;
 }
 
+#notice_container {
+  width: 25%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+#flash_notice {
+    padding: 5px 8px;
+    margin: 10px 0;
+    background-color: #CFC;
+    border: solid 1px #6C6;
+    text-align: center;
+}
+
+
 .map-container {
     height: 500px;
     width: 500px;

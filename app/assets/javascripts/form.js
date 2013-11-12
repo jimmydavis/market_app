@@ -36,24 +36,15 @@ $(document).mouseup(function(e) {
 });
 
 });
-
-
-
   // When you click the sign up button on the form
   // It should create a new user in the database
   $("#signup_form").on("submit", createUser);
-
-
 
 var createUser = function(e) {
   e.preventDefault();
   var email = $("#signup_email").val();
   var pWord = $("#signup_password").val();
   var pWordConfirmation = $("#password_confirmation").val();
-
-// I think the problem is that I need to assign password and password confirmation when the user is created,
-// but you can't mass-assign protected params
-// Error I am getting is that password digest, password, password confirmation can't be blank
 
   var newUserParams = {
     user: {
