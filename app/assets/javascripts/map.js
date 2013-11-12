@@ -33,20 +33,34 @@ googleMap.addPins = function() {
     type: "GET",
     url: "/markets"
   }).done(function(markets){
+    // iterates through each of the market in the markets object
     $.each(markets, function(i, market){
       var marketName = market.market_name;
       var marketId = market.id;
-      market.id =
+      var marketLocation = market.location;
 
+      // adds a location for each market and gives it some attributes
       var marketLatLng = new google.maps.LatLng(market.latitude, market.longitude);
       var marker = new google.maps.Marker({
         position: marketLatLng,
-        title: marketName
+        title: marketName + ": " + marketLocation
       });
+      // creates a market and sets it on the map defined in above fn
       marker.setMap(map);
+      // eventlistener for each marker
+      google.maps.event.addListener(marker, "click", function() {
+        $(".info-text").addClass("hidden");
+        $(".market").text(marketName + " " + marketLocation + " " + market.address_line_1 + " " + market.market_link);
+          // operation_hours
+          // operation_season
+          // );
+
+      });
     });
   });
 };
+
+
 
 
 
