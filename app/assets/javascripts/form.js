@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 // When you click on "LOG IN" link in header
 // it will toggle the form to log in
 $(".login").on("click", function(e) {
@@ -66,3 +67,6 @@ var createUser = function(e) {
   // # TODO make the login and signup disappear and make the favorites and logout appear
 });
 };
+
+// I want to have the flash notices fade out after a user logs in and logs out
+// $("#notice_container").delay(2000).fadeOut(400));

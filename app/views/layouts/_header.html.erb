@@ -18,25 +18,6 @@
           <%= link_to "LOG OUT", "/logout" %>
         <% else %>
 
-        <!-- THIS IS TO LOG IN ----------------- -->
-        <div id="topnav"class="topnav"> Have an account? <a href="login" class="login"><span>LOG IN</span></a> </div>
-        <fieldset id="login_menu">
-          <form method="post" id="login_form" action="/login">
-            <label for="email">Email</label>
-            <input id="login_email" name="email"type="text">
-          </p>
-          <p>
-            <label for="password">Password</label>
-            <input id="login_password" name="password" type="password">
-          </p>
-          <p class="remember">
-            <input id="login_submit"value="Log in"tabindex="6"type="submit">
-            <input id="remember"name="remember_me"value="1"tabindex="7"type="checkbox">
-            <label for="remember">Remember me</label>
-          </p>
-        </form>
-      </fieldset>
-
 
       <!-- THIS IS TO SIGN UP ------------------ -->
       <div id="topnav"class="topnav"><a href="/login" class="signup"><span>SIGN UP</span></a> </div>
@@ -54,6 +35,25 @@
         <input id="signup_submit" value="Sign Up"tabindex="6" type="submit">
       </form>
     </fieldset>
+
+            <!-- THIS IS TO LOG IN ----------------- -->
+        <div id="topnav"class="topnav"> Have an account? <a href="login" class="login"><span>LOG IN</span></a> </div>
+        <fieldset id="login_menu">
+          <form method="post" id="login_form" action="/login">
+            <label for="email">Email</label>
+            <input id="login_email" name="email"type="text">
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input id="login_password" name="password" type="password">
+          </p>
+          <p class="remember">
+            <input id="login_submit"value="Log in"tabindex="6"type="submit">
+            <input id="remember"name="remember_me"value="1"tabindex="7"type="checkbox">
+            <label for="remember">Remember me</label>
+          </p>
+        </form>
+      </fieldset>
 
 
     <!-- </div> -->
