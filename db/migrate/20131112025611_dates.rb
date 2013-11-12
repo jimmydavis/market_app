@@ -6,5 +6,6 @@ class Dates < ActiveRecord::Migration
       t.integer :week_number
 
       t.timestamps
+    end
   end
 end
