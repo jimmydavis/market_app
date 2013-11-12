@@ -35,8 +35,20 @@ googleMap.addPins = function() {
   });
 
   marker.setMap(map);
-
 };
+
+// ###########################################################################################
+//      TODO
+// ###########################################################################################
+  // in addPinsfn ajax get request for all markets
+  // -- use that data to create markets in a for loop
+  // -- create a hover eventListener that will display neighborhood and number of markets in popup
+
+  // create a function to pull data for a specific neighborhood
+  // display it in the LHB
+
+
+
 
 
 
