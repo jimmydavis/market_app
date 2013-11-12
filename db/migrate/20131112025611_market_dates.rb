@@ -1,6 +1,6 @@
-class Dates < ActiveRecord::Migration
+class MarketDates < ActiveRecord::Migration
   def change
-    create_table :dates do |t|
+    create_table :market_dates do |t|
       t.integer :market_id
       t.date :date_open
       t.integer :week_number

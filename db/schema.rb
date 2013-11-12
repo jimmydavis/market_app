@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20131112025611) do
 
-  create_table "dates", :force => true do |t|
+  create_table "market_dates", :force => true do |t|
     t.integer  "market_id"
     t.date     "date_open"
     t.integer  "week_number"
