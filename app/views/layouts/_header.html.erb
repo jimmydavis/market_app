@@ -11,13 +11,12 @@
       <p>
 
         <!--  <div id="container"> -->
-        <!-- TODO : add the  if current_user method in erb brackets to show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
+        <!-- TODO : if current_user, show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
         <% if current_user %>
-        <%= link_to "FAVORITES", current_user  %>
-        <!-- right now there is no logout -->
-        <%= link_to "LOG OUT", "/logout" %>
+          <%= link_to "FAVORITES", current_user  %>
+          <!-- right now there is no logout -->
+          <%= link_to "LOG OUT", "/logout" %>
         <% else %>
-        <!-- TODO Not sure if the paths will be different if we are doing a dynamic sign up and log in with AJAX -->
 
         <!-- THIS IS TO LOG IN ----------------- -->
         <div id="topnav"class="topnav"> Have an account? <a href="login" class="login"><span>LOG IN</span></a> </div>

@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    // $('#market').accordion();
-
 // When you click on "LOG IN" link in header
 // it will toggle the form to log in
 $(".login").on("click", function(e) {

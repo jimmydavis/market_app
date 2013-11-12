@@ -35,6 +35,8 @@ class UsersController < ApplicationController
         # TODO We can have this notice, or fade in and out using jQuery
         format.html { redirect_to @user, notice: 'Signed up successfully.' }
         format.json { render json: @user, status: :created, location: @user }
+        # The below line will create a logged in session when a user signs up
+        session[:user_id] = @user.id
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
