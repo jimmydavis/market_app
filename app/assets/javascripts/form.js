@@ -29,6 +29,7 @@ $(".signup").on("click", function(e) {
 $("fieldset#signup_menu").mouseup(function() {
   return false
 });
+
 $(document).mouseup(function(e) {
   if($(e.target).parent("a.signup").length==0) {
     $(".signup").removeClass("menu-open");
@@ -40,11 +41,10 @@ $(document).mouseup(function(e) {
 
 
 
-$(document).ready(function(){
   // When you click the sign up button on the form
   // It should create a new user in the database
   $("#signup_form").on("submit", createUser);
-});
+
 
 
 var createUser = function(e) {
@@ -63,7 +63,8 @@ var createUser = function(e) {
       password: pWord,
       password_confirmation: pWordConfirmation
     }
-  }
+  };
+
   $.ajax({
     type: "POST",
     url: "/users.json",
@@ -75,4 +76,4 @@ var createUser = function(e) {
   // $("#notice").append($("<p>").text("Created " + data.name).delay(2000).fadeOut(400));
   // # TODO make the login and signup disappear and make the favorites and logout appear
 });
-}
+};
