@@ -19,13 +19,22 @@ googleMap.createMap = function() {
     ]
   };
 
-  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
 };
 
 
 // adds pins to the map for each of the market points
-googleMap.addPin = function() {
+googleMap.addPins = function() {
+
+  var myLatlng = new google.maps.LatLng(40.7397346, -73.9897422);
+
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    title:"Hello World!"
+  });
+
+  marker.setMap(map);
 
 };
 
