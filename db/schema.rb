@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131111213432) do
+ActiveRecord::Schema.define(:version => 20131112025611) do
+
+  create_table "market_dates", :force => true do |t|
+    t.integer  "market_id"
+    t.date     "date_open"
+    t.integer  "week_number"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "markets", :force => true do |t|
     t.string   "market_name"
