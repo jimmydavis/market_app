@@ -1,9 +1,12 @@
 require "csv"
 
-file = File.open("20131111_nycmarket.csv","r")
+Market.delete_all
+
+# TODO -- may need to change path to get this to work in Heroku
+file = File.open("/Users/thomasmetzger/ga_wdi/heroku/market_app/db/20131111_nycmarket.csv","r")
 
 CSV.parse(file, :headers => true) do |row|
-  Market.create! (
+  Market.create! ({
     :market_name => row["market_name"],
     :location => row["location"],
     :address_line_1 => row["address_line_1"],
@@ -17,7 +20,6 @@ CSV.parse(file, :headers => true) do |row|
     :longitude => row["longitude"],
     :neighborhood => row["neighborhood"],
     :days_between_markets => row["days_between_markets"],
-    :season_date_range => row["season_date_range"])
+    :season_date_range => row["season_date_range"]})
 end
-
 

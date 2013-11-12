@@ -1,0 +1,263 @@
+"","county","market_name","location","address_line_1","city","state","zip","contact","phone","market_link","operation_hours","operation_season","fmnp","latitude","longitude","location_points","neighborhood","days_between_markets","season_date_range"
+"22","Bronx","Bissel Gardens Farmers' Market","Baychester Ave. & E. 241 St.,Bronx","Baychester Ave and East 241st St","Bronx","NY",10470,"Heather Warren-Dombrowa",3474272547,"http://www.justfood.org","Wed/Sat  9am-5pmSaturday  9am-5pm","July 10 - November 23","Y",40.90154,-73.8469,"Baychester Ave and East 241st St
+(40.90154, -73.8469)","Northeast Bronx","3|4","July 10 - November 23"
+"23","Bronx","Bronx Borough Hall Greenmarket","Grand Concourse161st & 162nd St.","901 Grand Concourse","Bronx","NY",10452,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 4pm","June 4 - November 26","Y",40.82715,-73.92278,"901 Grand Concourse
+(40.82715, -73.92278)","High Bridge and Morrisania","7","June 4 - November 26"
+"24","Bronx","Harvest Home Bronx Terminal Farmers' Market","Bronx Terminal Mall,Between E. 150th and E. 151st Sts., and River Ave.","151st Street and River Avenue","Bronx","NY",10456,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Saturday  10am-5pm","July 6 - November 16","Y",40.82284,-73.92875,"151st Street and River Avenue
+(40.82284, -73.92875)","High Bridge and Morrisania","7","July 6 - November 16"
+"25","Bronx","Harvest Home Co-op City Farmers' Market","Parking Lot 3, W side Co-op City Blvd.N side of Bellamy Loop","Co-Op City Blvd and Bellamy Loop","Bronx","NY",10475,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Saturday  8am-4pm","July 6 - November 16","Y",40.87225,-73.8244,"Co-Op City Blvd and Bellamy Loop
+(40.87225, -73.8244)","Northeast Bronx","7","July 6 - November 16"
+"26","Bronx","Harvest Home Echo Park Farmers' Market","Ryer St. and Burnside Ave.","East Burnside Ave and Ryer Ave","Bronx","NY",10457,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Wednesday  8am-4pm","July 10 - November 20","Y",40.85085,-73.90148,"East Burnside Ave and Ryer Ave
+(40.85085, -73.90148)","Central Bronx","7","July 10 - November 20"
+"27","Bronx","Harvest Home Forest Ave. Farmers' Market","Forest Ave., btwn Westchester Ave. &  E. 156th St.","East 156st St and Forest Ave","Bronx","NY",10455,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Wednesday  8am-4pm","July 10 - November 20","Y",40.81815,-73.90624,"East 156st St and Forest Ave
+(40.81815, -73.90624)","Hunts Point and Mott Haven","7","July 10 - November 20"
+"28","Bronx","Harvest Home Jacobi  Hospital Farmers' Market","1400 Pelham Parkway,at Eastchester Rd.","1400 Pelham Pkwy","Bronx","NY",10461,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Tuesday  8am-4pm","June 11 - November 19","Y",40.85407,-73.8469,"1400 Pelham Pkwy
+(40.85407, -73.8469)","Southeast Bronx","7","June 11 - November 19"
+"29","Bronx","Harvest Home Jerome Ave. Farmers' Market","Plaza Drive, btwn 170th St. & Elliot Place","Jerome Ave and East 170th St","Bronx","NY",10452,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Friday  8am-4pm","July 5 - November 15","Y",40.84024,-73.91763,"Jerome Ave and East 170th St
+(40.84024, -73.91763)","High Bridge and Morrisania","7","July 5 - November 15"
+"30","Bronx","Harvest Home Mt. Eden Farmers' Market","Mt. Eden & Morris Aves., near Bronx-Lebanon Hospital","Mt Eden Pkwy and Morris Ave","Bronx","NY",10457,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Thursday  8am-4pm","May 16 - November 14","Y",40.84306,-73.90955,"Mt Eden Pkwy and Morris Ave
+(40.84306, -73.90955)","Central Bronx","7","May 16 - November 14"
+"31","Bronx","Harvest Home North Central Bronx Farmers' Market","Mosholu Parkway North & Jerome Ave.","Jerome Ave and East Mosholu Pkwy North","Bronx","NY",10467,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Wednesday  8am-4pm","July 10 - November 20","Y",40.88038,-73.88378,"Jerome Ave and East Mosholu Pkwy North
+(40.88038, -73.88378)","Bronx Park and Fordham","7","July 10 - November 20"
+"32","Bronx","Harvest Home Sunday Farmers' Market","Grand Concourse & E. 165th St.,  at Bronx Museum of the Arts","Grand Concourse and East 165st St","Bronx","NY",10456,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Sunday  8am-4pm","July 7 - November  17","Y",40.83086,-73.92033,"Grand Concourse and East 165st St
+(40.83086, -73.92033)","High Bridge and Morrisania","7","July 7 - November  17"
+"33","Bronx","Hunts Point Farmers' Market","Monsignor Raul del Valle Sq.(subway#6)Southern Blvd., E. 163rd & Bruckner","Southern Blvd and East 163rd St","Bronx","NY",10459,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Wed/Sat  8:30am-4pm","June 26 - November 23","Y",40.82099,-73.89167,"Southern Blvd and East 163rd St
+(40.82099, -73.89167)","Hunts Point and Mott Haven","3|4","June 26 - November 23"
+"34","Bronx","Kingsbridge Heights Farmers Market","Kingsbridge Heights Comm. Ctr,3101 Kingsbridge Terrace, Bronx","3101 Kingsbridge Terrace","Bronx","NY",10463,"Sadie Mahoney",7188840700,"http://www.khcc-nyc.org","Friday  11am-7pm","July 5 - September 6","Y",40.87758,-73.90072,"3101 Kingsbridge Terrace
+(40.87758, -73.90072)","Kingsbridge and Riverdale","7","July 5 - September 6"
+"35","Bronx","La Familia Verde Farmers' Market","Tremont Park, on Tremont Ave.;btwn LaFontaine & Arthur Aves.","East Tremont Ave and Arthur Ave","Bronx","NY",10457,"Heidi Hynes",7185831765,"http://www.lafamiliaverde.org","Tuesday  8am-2pm","July 9 - November 12","Y",40.8464,-73.89337,"East Tremont Ave and Arthur Ave
+(40.8464, -73.89337)","Central Bronx","7","July 9 - November 12"
+"36","Bronx","Learn it, Grow it, Eat it Youthmarket","169th St. and Boston Rd.McKinley Square (Parks)","Boston Rd and East 169th St","Bronx","NY",10456,"Ryan Morningstar",5089442083,"","Wed  10am-2:30pm","July 10 - November 20","Y",40.83117,-73.90032,"Boston Rd and East 169th St
+(40.83117, -73.90032)","High Bridge and Morrisania","7","July 10 - November 20"
+"37","Bronx","Lincoln Hospital Greenmarket","149th St. btw Park & Morris Aves.","East 149th St and Morris Ave","Bronx","NY",10451,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tue/Fri  8am - 3pm","June 28 - November 22","Y",40.81739,-73.92276,"East 149th St and Morris Ave
+(40.81739, -73.92276)","High Bridge and Morrisania","3|4","June 28 - November 22"
+"38","Bronx","Marble Hill Youthmarket","225th St., btw Broadway & Exteriorbtwn Marshalls & Applebees","Broadway and West 225th St","Bronx","NY",10463,"Ryan Morningstar",5089442083,"","Thursday  2pm-6pm","July 11 - November 21","Y",40.87424,-73.91036,"Broadway and West 225th St
+(40.87424, -73.91036)","Kingsbridge and Riverdale","7","July 11 - November 21"
+"39","Bronx","Mott Haven Farmers' Market","Padre Plaza Success Community Garden,E. 139th St. & 283 St. Ann's Ave.","283 Saint Anns Ave","Bronx","NY",10454,"Sheila Young",7189241143,"","Wednesday  10am-4pm","June 26 - November 13","Y",40.80789,-73.91709,"283 Saint Anns Ave
+(40.80789, -73.91709)","Hunts Point and Mott Haven","7","June 26 - November 13"
+"40","Bronx","New York Botanical Garden Greenmarket","Mosholu Gate on Southern Blvd btwMosholu Pkwy and Bedford Park Blvd","Dr Theodore Kazimiroff Blvd and Mosholu Pkwy","Bronx","NY",10458,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  9am-3pm","June 19 - November 27","Y",40.86771,-73.8796,"Dr Theodore Kazimiroff Blvd and Mosholu Pkwy
+(40.86771, -73.8796)","Bronx Park and Fordham","7","June 19 - November 27"
+"41","Bronx","Northeast Bronx Farmers' Market","Haffen Park, Hammersley & Wickham Aves.","Hammersley Ave and Wickham Ave","Bronx","NY",10469,"Nate Dukes",7188629687,"","Saturday  8am-5pm","July 6 - November 16","Y",40.87268,-73.83912,"Hammersley Ave and Wickham Ave
+(40.87268, -73.83912)","Northeast Bronx","7","July 6 - November 16"
+"42","Bronx","Parkchester/ Virginia Park Greenmarket","Westchester Ave. & White Plains Rd.","Westchester Ave and White Plains Rd","Bronx","NY",10472,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Friday  8am - 4pm","June 14 - November 22","Y",40.83283,-73.8627,"Westchester Ave and White Plains Rd
+(40.83283, -73.8627)","Southeast Bronx","7","June 14 - November 22"
+"43","Bronx","Poe Park Greenmarket","btw Grand Concourse & Valentine192 Street","Grand Concourse and East 192nd St","Bronx","NY",10458,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 3pm","July 2 - November 19","Y",40.86417,-73.8956,"Grand Concourse and East 192nd St
+(40.86417, -73.8956)","Bronx Park and Fordham","7","July 2 - November 19"
+"44","Bronx","Project EATS Hegney Place Farmers' Market","Rae Street,Bronx","Rae Street","Bronx","NY",10455,"Michelle Hodges",2126121528,"http://www.projecteats.org","Saturday  8am-12 Noon","June 8 - November 23","Y",40.81752,-73.91232,"Rae Street
+(40.81752, -73.91232)","Hunts Point and Mott Haven","7","June 8 - November 23"
+"45","Bronx","Riverdale Neighborhood House Youthmarket","W. 256th St. & Mosholu, RiverdaleNeighborhood House Property","5521 West 226th St","Bronx","NY",10466,"Ryan Morningstar",5089442083,"","Thursday  3pm-7pm","July 11 - November 21","Y",40.90388,-73.90313,"5521 West 226th St
+(40.90388, -73.90313)","Northeast Bronx","7","July 11 - November 21"
+"46","Bronx","Riverdale Y Sunday Farmers' Market","Independence Ave,W. 237th St., BronxMiddle School 141","Independence Ave and W 237 Street","Bronx","NY",10463,"Marti Michael",7185488200,"http://www.riverdaley.org","Sunday  9am-2pm","May 5 - November 24","Y",40.88836,-73.91311,"Independence Ave and W 237 Street
+(40.88836, -73.91311)","Kingsbridge and Riverdale","7","May 5 - November 24"
+"47","Bronx","Roberto Clemente Plaza Youthmarket","Pedestrian Plaza on 3rd Ave.Btwn 149th & 148th, Bronx","3rd Ave and 148th Street","Bronx","NY",10455,"Ryan Morningstar",5089442083,"","Wednesday  9am-3pm","July 10 - November 20","Y",40.81553,-73.91858,"3rd Ave and 148th Street
+(40.81553, -73.91858)","Hunts Point and Mott Haven","7","July 10 - November 20"
+"48","Bronx","Taqwa Community Farmers' Market","90 W. 164th St. & Ogden Ave. In garden, Bronx","90 West 164th St","Bronx","NY",10452,"Bobby Watson",7188727282,"http://www.justfood.org/cityfarms/markets","Saturday  8am-4pm","June 29 - November 16","Y",40.83251,-73.92886,"90 West 164th St
+(40.83251, -73.92886)","High Bridge and Morrisania","7","June 29 - November 16"
+"49","Bronx","The Heights Community Farmers' Market","University Ave. and W. 181 Street,The Bronx","University Ave and W 181st Street","Bronx","NY",10453,"Rob Moore",7185083194,"http://www.bronxworks.org","Thursday  9am-3pm","July 11 - October 31","Y",40.8572,-73.90974,"University Ave and W 181st Street
+(40.8572, -73.90974)","Central Bronx","7","July 11 - October 31"
+"50","Bronx","Wholesale Greenmarket","800 Food Center Drive,Hunts Point, Bronx","800 Food Center Dr","Bronx","NY",10474,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Mon-Sat  2am-8am","July - November","Y",40.80234,-73.87367,"800 Food Center Dr
+(40.80234, -73.87367)","Hunts Point and Mott Haven","1|1|1|1|1|2","July - November"
+"148","Kings","Albee Square Farmers' Market","Fulton St.,corner of Fulton and Bond Sts., Brooklyn","Fulton Street and Bond Street","Brooklyn","NY",11201,"Johanna Safar",9143181067,"","Thursday  10am-4pm    Saturday  11am-5pm","May 4 - November 23","Y",40.6897,-73.98296,"Fulton Street and Bond Street
+(40.6897, -73.98296)","Northwest Brooklyn","7","May 4 - November 23"
+"149","Kings","Bartel-Pritchard Square Greenmarket","Prospect Park West, at 15th St. (inside park entrance)","Bartel Pritchard Square","Brooklyn","NY",11215,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  8am-3pm","May 1 - November 27","Y",40.66094,-73.97979,"Bartel Pritchard Square
+(40.66094, -73.97979)","Northwest Brooklyn","7","May 1 - November 27"
+"150","Kings","Bay Ridge Greenmarket","Walgreen's parking lot,Third Ave. & 95th St.","Third Ave and 95th St","Brooklyn","NY",11209,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","June 1 - November 23","Y",40.61724,-74.03362,"Third Ave and 95th St
+(40.61724, -74.03362)","Southwest Brooklyn","7","June 1 - November 23"
+"151","Kings","Bensonhurst Greenmarket","18th Ave between 81st & 82nd Streets, Brooklyn","8112 Cristoforo Colombo Blvd","Brooklyn","NY",11214,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday 9am - 4pm","July 7 - November 23","Y",40.60971,-73.99971,"8112 Cristoforo Colombo Blvd
+(40.60971, -73.99971)","Southwest Brooklyn","7","July 7 - November 23"
+"152","Kings","Boro Park Greenmarket","14th Ave. btw 49th & 50th Sts.","14th Ave and 49th St","Brooklyn","NY",11219,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thursday  8am - 3pm","July 11 - November 21","Y",40.6337,-73.98992,"14th Ave and 49th St
+(40.6337, -73.98992)","Borough Park","7","July 11 - November 21"
+"153","Kings","Brooklyn Borough Hall Greenmarket","Supreme Court Plaza, Court & Montague Sts.","Court St and Montague St","Brooklyn","NY",11201,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tue/Thu/Sat  8am - 6pm","Year-round","Y",40.69375,-73.99047,"Court St and Montague St
+(40.69375, -73.99047)","Northwest Brooklyn","2|2|3","January 1 - December 31"
+"154","Kings","Brooklyn Bridge Park Farmers' Market","At end of Atlantic Ave at Pier 6,Brooklyn","Furman Street and Joralemon Street","Brooklyn","NY",11201,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Sunday  11am-5pm","June 9 - December 1","Y",40.69389,-73.99923,"Furman Street and Joralemon Street
+(40.69389, -73.99923)","Northwest Brooklyn","7","June 9 - December 1"
+"155","Kings","Brownsville Community Farmers' Market","514 Rockaway Ave., BrooklynCorner of Rockaway & Sutter Ave.","514 Rockaway Ave","Brooklyn","NY",11212,"Renee Murir",7183455000,"http://www.bmsfhc.org","Saturday  8:30am-4:30pm","July 20 - November 09","Y",40.66746,-73.91048,"514 Rockaway Ave
+(40.66746, -73.91048)","Central Brooklyn","7","July 20 - November 09"
+"156","Kings","Brownsville Pitkins Ave Youthmarket","Thomas Boyland, south of Pitkin, west side","Thomas Boyland St and Pitkin Ave","Brooklyn","NY",11212,"Ryan Morningstar",5089442083,"","Saturday  9:30am-3:30pm","July 13 - November 23","Y",40.66925,-73.91358,"Thomas Boyland St and Pitkin Ave
+(40.66925, -73.91358)","Central Brooklyn","7","July 13 - November 23"
+"157","Kings","Brownsville Rockaway Youthmarket","Rockaway Ave, btwn Livonia Ave & Dumont","Rockaway Ave and Livonia Ave","Brooklyn","NY",11212,"Ryan Morningstar",5089442083,"","Friday  1pm - 6pm","July 12 - November 22","Y",40.66255,-73.90892,"Rockaway Ave and Livonia Ave
+(40.66255, -73.90892)","Central Brooklyn","7","July 12 - November 22"
+"158","Kings","Bushwick I Farmers' Market","Linden St.,btwn Broadway & Bushwick Aves.","Broadway and Linden St","Brooklyn","NY",11221,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Wednesday  10am-6pm","June 5 - November 13","Y",40.68992,-73.92281,"Broadway and Linden St
+(40.68992, -73.92281)","Bushwick and Williamsburg","7","June 5 - November 13"
+"159","Kings","Bushwick III Farmers' Market","Broadway, btwn Halsey St. and Thomas Boyland","Halsey St and Broadway Ave.","Brooklyn","NY",11385,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Thursday  10am-6pm","June 6 - November 14","Y",40.69952,-73.91106,"Halsey St and Broadway Ave.
+(40.69952, -73.91106)","West Central Queens","7","June 6 - November 14"
+"160","Kings","Bushwick III Satellite Farmers' Market","Irving & Putnam Aves.,Brooklyn","Irving Ave and Putnam Ave","Brooklyn","NY",11237,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Thursday 12pm-5pm","June 6 - November 14","Y",40.6967,-73.9103,"Irving Ave and Putnam Ave
+(40.6967, -73.9103)","Bushwick and Williamsburg","7","June 6 - November 14"
+"161","Kings","Bushwick II/Maria Hernandez Farmers' Market","Knickerbocker Ave. & Starr St.Maria Hernandez Park, Brooklyn","Knickerbocker Ave and Starr St","Brooklyn","NY",11237,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Saturday  9am-4pm","June 1 - November 16","Y",40.70281,-73.92539,"Knickerbocker Ave and Starr St
+(40.70281, -73.92539)","Bushwick and Williamsburg","7","June 1 - November 16"
+"162","Kings","Bushwick II Satellite Farmers' Market","Wilson Ave & Halsey St.,Irving Square Park, Brooklyn","Wilson Ave and Halsey St","Brooklyn","NY",11207,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Saturday  11am-3pm","June 1 - November 16","Y",40.6915,-73.90955,"Wilson Ave and Halsey St
+(40.6915, -73.90955)","East New York and New Lots","7","June 1 - November 16"
+"163","Kings","Bushwick I Satellite Farmers' Market","Myrtle Ave. & Grove St.Near Make-the-Road NY, Brooklyn","Myrtle Ave and Grove St","Brooklyn","NY",11237,"Travis Tench",6463939305,"http://www.bushwickfarmersmarket.org","Friday 12 Noon-5 pm","June 7 - November 15","Y",40.69916,-73.91492,"Myrtle Ave and Grove St
+(40.69916, -73.91492)","Bushwick and Williamsburg","7","June 7 - November 15"
+"164","Kings","Carroll Gardens Greenmarket","Carroll St., btw Court & Smith Sts.","Carroll St and Court St","Brooklyn","NY",11231,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  8am - 3pm","Year-round","Y",40.68106,-73.99653,"Carroll St and Court St
+(40.68106, -73.99653)","Northwest Brooklyn","7","January 1 - December 31"
+"165","Kings","Coney Island Farmers' Market","Surf Ave. & W. 16th St.","Surf Ave and West 16th St","Brooklyn","NY",11224,"Judi Orlando",7182664653,"http://www.astelladevelopment.org","Sunday  9am-3pm","June 16 - November 24","Y",40.57542,-73.98345,"Surf Ave and West 16th St
+(40.57542, -73.98345)","Southern Brooklyn","7","June 16 - November 24"
+"166","Kings","Cooper Park Farmers' Market","Cooper Park,Maspeth Ave. & Olive St., Brooklyn","Cooper Park","Brooklyn","NY",11211,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Sunday  11am-4pm","May 26 - November 24","Y",40.71607,-73.93868,"Cooper Park
+(40.71607, -73.93868)","Greenpoint","7","May 26 - November 24"
+"167","Kings","Cortelyou Greenmarket","Cortelyou Rd. btw Argyle and Rugby Rds.","Cortelyou Rd and Argyle Rd","Brooklyn","NY",11226,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  8am - 4pm","Year-round","Y",40.64044,-73.96617,"Cortelyou Rd and Argyle Rd
+(40.64044, -73.96617)","Flatbush","7","January 1 - December 31"
+"168","Kings","Crown Heights Farmers' Market","Hamilton Metz Park, Albany & Lefferts Aves., Brooklyn","Albany Ave and Lefferts Ave","Brooklyn","NY",11213,"Nancie Katz",9177564202,"http://www.seedsinthemiddle.org","Thursday  11am-7pm","June 6 - November 14","Y",40.66303,-73.94001,"Albany Ave and Lefferts Ave
+(40.66303, -73.94001)","Central Brooklyn","7","June 6 - November 14"
+"169","Kings","Cypress Hills Youthmarket","Fulton St., btwn Richmond & Logan Sts., Brooklyn","Fulton St and Logan St","Brooklyn","NY",11208,"Ryan Morningstar",5089442083,"","Friday  2pm-6pm","July 12 - November 22","Y",40.68203,-73.87787,"Fulton St and Logan St
+(40.68203, -73.87787)","East New York and New Lots","7","July 12 - November 22"
+"170","Kings","East New York Farmers' Market I","New Lots and Schenck Aves.,Brooklyn, NY 11207","New Lots Ave and Schenck Ave","Brooklyn","NY",11207,"Janelle Nicol",7186497979,"http://www.eastnewyorkfarms.org","Saturday  9am-3pm","June 29 - November 16","Y",40.6647,-73.88658,"New Lots Ave and Schenck Ave
+(40.6647, -73.88658)","East New York and New Lots","7","June 29 - November 16"
+"171","Kings","East New York Farmers' Market II","New Lots & Georgia Aves.,Brooklyn, NY 11207","New Lots Ave and Alabama Ave","Brooklyn","NY",11207,"Janelle Nicol",7186497979,"http://www.eastnewyorkfarms.org","Wed  3:30pm- 6:30pm","July 10 - October 30","Y",40.66077,-73.8955,"New Lots Ave and Alabama Ave
+(40.66077, -73.8955)","East New York and New Lots","7","July 10 - October 30"
+"172","Kings","Fort Greene Park Greenmarket","Washington Park,btw Dekalb Ave. & Willoughby St.","Washington Park and DeKalb Ave","Brooklyn","NY",11205,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 4pm","Year-round","Y",40.68961,-73.9731,"Washington Park and DeKalb Ave
+(40.68961, -73.9731)","Northwest Brooklyn","7","January 1 - December 31"
+"173","Kings","Graham Avenue Farmers' Market","Cook St.,to the east of Graham Ave.","Graham Ave and Cook St","Brooklyn","NY",11206,"Betty Cooney",7183876643,"http://www.grahamavebid.com","Sat  8am-5pm    Sun  8am-4pm","July 6 - October 27","Y",40.70235,-73.94238,"Graham Ave and Cook St
+(40.70235, -73.94238)","Bushwick and Williamsburg","1|6","July 6 - October 27"
+"174","Kings","Grand Army Plaza Greenmarket","Prospect Park entrance,Flatbush Ave. & Prospect Park West","Flatbush Ave and Grand Army Plaza","Brooklyn","NY",11238,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday   8am - 4pm","Year-round","Y",40.67412,-73.9695,"Flatbush Ave and Grand Army Plaza
+(40.67412, -73.9695)","Central Brooklyn","7","January 1 - December 31"
+"175","Kings","Greenpoint/ McCarren Park Greenmarket","Union Ave btw Driggs & N 12th St","McCarren Dog Park Run","Brooklyn","NY",11222,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","Year-round","Y",40.72004,-73.95291,"McCarren Dog Park Run
+(40.72004, -73.95291)","Greenpoint","7","January 1 - December 31"
+"176","Kings","Greenpoint/ McGolrick Park Farmers' Market","McGolrick Park,Russel St. off Nassau Ave., Brooklyn","McGolrick Park","Brooklyn","NY",11222,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Sunday  11am-4pm","April 7 - December 29","Y",40.72444,-73.94336,"McGolrick Park
+(40.72444, -73.94336)","Greenpoint","7","April 7 - December 29"
+"177","Kings","Harvest Home Coney Island Farmers' Market","Ocean Parkway,btwn Ave. Z & Shore Rd.","Ocean Pkwy and Avenue Z","Brooklyn","NY",11235,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Friday  8am-4pm","June 14 - November 15","Y",40.58669,-73.96578,"Ocean Pkwy and Avenue Z
+(40.58669, -73.96578)","Southern Brooklyn","7","June 14 - November 15"
+"178","Kings","Harvest Home Lutheran Farmers' Market","Lutheran Way, btwn 55th St. & Sunset Park, Brooklyn","Second Ave and 55th St","Brooklyn","NY",11220,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Thursday  8am-4pm","July 11 - November 14","Y",40.6463,-74.01984,"Second Ave and 55th St
+(40.6463, -74.01984)","Sunset Park","7","July 11 - November 14"
+"179","Kings","Hattie Carthan After Church Farmers' Market","49 Van Buren St.,Herban Farm & Bailey's Café","49 Van Buren St","Brooklyn","NY",11221,"Yonnette Fleming",7186383566,"http://www.hattiecarthancommunitymarket.com","Sunday  1pm-6pm","July 28 - November 17","Y",40.69024,-73.94359,"49 Van Buren St
+(40.69024, -73.94359)","Bushwick and Williamsburg","7","July 28 - November 17"
+"180","Kings","Hattie Carthan Community Garden Farmers' Market","363-365 Clifton Place,btwn Nostrand & Marcy Aves.","356 Clifton Pl","Brooklyn","NY",11216,"Yonnette Fleming",7186383566,"http://www.hattiecarthancommunitymarket.com","Saturday  9am-3pm","July 13 - November 16","Y",40.68902,-73.95016,"356 Clifton Pl
+(40.68902, -73.95016)","Central Brooklyn","7","July 13 - November 16"
+"181","Kings","High School for Public Service Farmers' Market","600 Kingston Ave., btw Rutland & Winthrop Aves.","600 Kingston Ave","Brooklyn","NY",11203,"Steve Frillman",2125942155,"http://www.hspsfarm.blogspot.com","Wed  2:30pm-6:30pm","June 26 - October 30","Y",40.65866,-73.94384,"600 Kingston Ave
+(40.65866, -73.94384)","Flatbush","7","June 26 - October 30"
+"182","Kings","Isabahlia Farmers' Market","Ponell Street Garden410 Livonia Ave, Brooklyn","410 Livonia Ave","Brooklyn","NY",11212,"Brenda Thompson-Duchene",7184983174,"","Saturday  4pm-8pm","June 29 - November 2","Y",40.6635,-73.90234,"410 Livonia Ave
+(40.6635, -73.90234)","Central Brooklyn","7","June 29 - November 2"
+"183","Kings","Kensington Youthmarket","Ft. Hamilton Pkwy, btwn E. 4th & E. 5th Sts.corner outside the library","Fort Hamilton Pkwy and East 5th St","Brooklyn","NY",11218,"Ryan Morningstar",5089442083,"","Saturday  9am-3pm","July 13 - November 23","Y",40.64915,-73.97662,"Fort Hamilton Pkwy and East 5th St
+(40.64915, -73.97662)","Borough Park","7","July 13 - November 23"
+"184","Kings","Malcolm X Blvd. Community Farmers' Market","Jackie Robinson Park,btwn Chauncy & Marion Sts.","Malcolm X Blvd and Marion St","Brooklyn","NY",11233,"Rev. Robert Jackson",7183633085,"http://www.brooklynrescuemission.org","Saturday  8am-3pm","July 13 - October 26","Y",40.67975,-73.92865,"Malcolm X Blvd and Marion St
+(40.67975, -73.92865)","Central Brooklyn","7","July 13 - October 26"
+"185","Kings","Myrtle Avenue Farmers' Market","Myrtle & North Portland Aves.,Brooklyn","177 Myrtle Ave","Brooklyn","NY",11201,"Kassy Nystrom",7182301689,"http://www.myrtleavenue.org","Wednesday  8am-3pm","July 3 - October 30","Y",40.69363,-73.98241,"177 Myrtle Ave
+(40.69363, -73.98241)","Northwest Brooklyn","7","July 3 - October 30"
+"186","Kings","Park Slope Farmers' Market","Fourth St., off Fifth Ave., near P.S. 51","Fourth Street and Fifth Avenue","Brooklyn","NY",11215,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Sunday  10am-5pm","Year-round","Y",40.6722,-73.98379,"Fourth Street and Fifth Avenue
+(40.6722, -73.98379)","Northwest Brooklyn","7","January 1 - December 31"
+"187","Kings","Project EATS Brownsville Farmers' Market","Amboy Street Garden,corner of Amboy St. & Blake Ave.","Amboy St and Blake Ave","Brooklyn","NY",11212,"Michelle Hodges",2126121528,"http://www.projecteats.org","Tuesday  3pm-7pm","June 11 - November 26","Y",40.66507,-73.91348,"Amboy St and Blake Ave
+(40.66507, -73.91348)","Central Brooklyn","7","June 11 - November 26"
+"188","Kings","Sunset Park Greenmarket","4th Ave. btw 59th & 60th Sts.","4th Ave and 60th St","Brooklyn","NY",11220,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","June 29 - November 16","Y",40.64081,-74.01836,"4th Ave and 60th St
+(40.64081, -74.01836)","Sunset Park","7","June 29 - November 16"
+"189","Kings","Urban Oasis Farmers' Market","Market Pavilion,Clarkson & Troy Aves., Brooklyn","681 Clarkson Ave","Brooklyn","NY",11203,"Beatrix McLeod",7182217132,"","Wed  2pm-5:30pm","June 12 - November 13","Y",40.65621,-73.93741,"681 Clarkson Ave
+(40.65621, -73.93741)","Flatbush","7","June 12 - November 13"
+"190","Kings","Walt Shamel Farmers' Market","Walt Shamel Community Garden,1095 Dean St., BrooklynBetween Beford & Franklin Aves.","109 Dean Street","Brooklyn","NY",11217,"Desiree Ortiz",7186854816,"","Saturday  8am-3pm","June 29 - November 2","Y",40.68693,-73.98894,"109 Dean Street
+(40.68693, -73.98894)","Northwest Brooklyn","7","June 29 - November 2"
+"191","Kings","Weeksville Heritage Center Farmers' Market","158 Buffalo Ave.","158 Buffalo Ave","Brooklyn","NY",11213,"Yemi Amu",9173286842,"","Saturday  9am-2pm","July 6 - November 2","Y",40.67398,-73.92531,"158 Buffalo Ave
+(40.67398, -73.92531)","Central Brooklyn","7","July 6 - November 2"
+"192","Kings","Williamsburg Greenmarket","Havemeyer St.,btw Broadway & Division St.","Havemeyer St and Division Ave","Brooklyn","NY",11211,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thursday  8am - 4pm","July 11 - November 21","Y",40.70741,-73.95993,"Havemeyer St and Division Ave
+(40.70741, -73.95993)","Greenpoint","7","July 11 - November 21"
+"193","Kings","Windsor Terrace PS 154 Greenmarket","11th Ave.btwn Sherman St. & Windsor Place","1625 11th Avenue","Brooklyn","NY",11215,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  9am - 3pm","May 5 - December 22","Y",40.65699,-73.97597,"1625 11th Avenue
+(40.65699, -73.97597)","Northwest Brooklyn","7","May 5 - December 22"
+"251","New York","175th St. Greenmarket","175th St. Btw Wadsworth & Broadway","West 175th St and Broadway","New York","NY",10033,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thursday  8am - 5pm","June 27 - November 21","Y",40.84622,-73.93847,"West 175th St and Broadway
+(40.84622, -73.93847)","Inwood and Washington Heights","7","June 27 - November 21"
+"252","New York","42nd St. Greenmarket","W. 42nd St. btwn 11th & 12th Aves.,Manhattan","42nd St and 11th Ave","Manhattan","NY",10036,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  8am-6pm","July 10 - November 27","Y",40.76085,-73.99832,"42nd St and 11th Ave
+(40.76085, -73.99832)","Chelsea and Clinton","7","July 10 - November 27"
+"253","New York","57th St. Greenmarket","Ninth Ave., Balsley ParkBtw 56th & 57th Sts.","West 57th St and Ninth Ave","New York","NY",10019,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sat 4/20-12/21 8a-5pWed 5/1-12/18 8a-5p","April 20 - December 21","Y",40.76792,-73.98572,"West 57th St and Ninth Ave
+(40.76792, -73.98572)","Chelsea and Clinton","7_4|3","April 20 - December 21"
+"254","New York","79th St. Greenmarket","Columbus Ave., W. 78th & 81st Sts.","West 79th St and Columbus Ave","New York","NY",10024,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  8am - 5pm","Year-round","Y",40.78195,-73.97548,"West 79th St and Columbus Ave
+(40.78195, -73.97548)","Upper West Side","7","January 1 - December 31"
+"255","New York","82 St./St. Stephens Greenmarket","82nd St., btw First & York Aves.","East 82nd St and First Ave","New York","NY",10028,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  9am - 2:30pm","Year-round","Y",40.7743,-73.95126,"East 82nd St and First Ave
+(40.7743, -73.95126)","Upper East Side","7","January 1 - December 31"
+"256","New York","92 St. Greenmarket","First Ave.,btw 92nd & 93rd Sts.","East 92nd St and First Ave","New York","NY",10128,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  9am - 4pm","June 23 - November 24","Y",40.78071,-73.94658,"East 92nd St and First Ave
+(40.78071, -73.94658)","Upper East Side","7","June 23 - November 24"
+"257","New York","97th Street Greenmarket","97th St.,btw Amsterdam & Columbus Aves.","West 97th St and Columbus Ave","New York","NY",10025,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Friday  8am - 2pm","Year-round","Y",40.79356,-73.96701,"West 97th St and Columbus Ave
+(40.79356, -73.96701)","Upper West Side","7","January 1 - December 31"
+"258","New York","Abingdon Square Greenmarket","West 12th St and 8th Ave","Hudson St and 8th Ave","New York","NY",10014,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 2pm","Year-round","Y",40.73691,-74.00557,"Hudson St and 8th Ave
+(40.73691, -74.00557)","Greenwich Village and Soho","7","January 1 - December 31"
+"259","New York","Bowling Green Greenmarket","Broadway, at Battery Place","Broadway and Bowling Green","New York","NY",10004,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tue/Thu  8am - 5pm","Year-round","Y",40.70463,-74.01415,"Broadway and Bowling Green
+(40.70463, -74.01415)","Lower Manhattan","2|5","January 1 - December 31"
+"260","New York","Broadway French Farmers' Market","Broadway,btwn 35th & 36th Sts., Manhattan","Broadway and 35th Street","Manhattan","NY",10018,"Johanna Safar",9143181067,"","Tue 11:30am-6:30pmFri 11:30am-6:30pm","May 3 - November 26","Y",40.75069,-73.98783,"Broadway and 35th Street
+(40.75069, -73.98783)","Chelsea and Clinton","3|4","May 3 - November 26"
+"261","New York","City Hall Park Greenmarket","Broadway, at Chambers St.","Broadway and Chambers St","New York","NY",10007,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tue/Fri  8am - 4pm","March 12 - December 24","Y",40.71416,-74.00632,"Broadway and Chambers St
+(40.71416, -74.00632)","Lower Manhattan","3|4","March 12 - December 24"
+"262","New York","Columbia Greenmarket","Broadway, btw 114th & 116th Sts.","Broadway and West 115th St","New York","NY",10027,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thu/Sun  8am - 5pm","Year-round","Y",40.80738,-73.96447,"Broadway and West 115th St
+(40.80738, -73.96447)","Central Harlem","3|4","January 1 - December 31"
+"263","New York","Dag Hammarskjold Plaza Greenmarket","47th St.,btw 2nd & First Aves.","East 47th St and Second Ave","New York","NY",10017,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  8am-4pm","Year-round","Y",40.75298,-73.96989,"East 47th St and Second Ave
+(40.75298, -73.96989)","Gramercy Park and Murray Hill","7","January 1 - December 31"
+"264","New York","Fort Washington Greenmarket","Fort Washington Ave. & 168th St.","Fort Washington Ave and West 168th St","New York","NY",10032,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 4pm","June 4 - November 26","Y",40.84217,-73.94227,"Fort Washington Ave and West 168th St
+(40.84217, -73.94227)","Inwood and Washington Heights","7","June 4 - November 26"
+"265","New York","Grass Roots Farmers' Market","Jackie Robinson Park, 145th St. & Edgecombe","West 145th St and Edgecombe Ave","New York","NY",10030,"Fred Williams",9175158046,"","Sat/Tue  9am-4pm","July 13 - November 26","Y",40.82363,-73.94383,"West 145th St and Edgecombe Ave
+(40.82363, -73.94383)","Central Harlem","3|4","July 13 - November 26"
+"266","New York","Hamilton Heights Green Farmers Market","Amsterdam Ave. btwn W. 143rd &  W. 144th Sts.,Manhattan","143rd Street and Amsterdam Ave","Manhattan","NY",10031,"Khary Lazarre-White",2122837044,"http://www.brotherhood-sistersol.org","Wednesday  11:30am-4:30pm","June 19 - November 27","Y",40.82395,-73.94853,"143rd Street and Amsterdam Ave
+(40.82395, -73.94853)","Inwood and Washington Heights","7","June 19 - November 27"
+"267","New York","Harlem State Office Building Farmers' Market","163 W 125 St,Adam Clayton Powell Jr. State Office Bldg","163 West 125 Street","New York","NY",10027,"Tupacamaru Tiwoni",6463517611,"http://www.125thstreetfarmersmarket.com","Tuesday  10am-5pm   Friday 3pm - 8pm","June 11 - November 29","Y",40.80849,-73.94715,"163 West 125 Street
+(40.80849, -73.94715)","Central Harlem","7","June 11 - November 29"
+"268","New York","Harvest Home East Harlem Farmers' Market","E. 104th St. and Third Ave.","East 104th St and Third Ave","New York","NY",10029,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Thursday  8am-4pm","July 11 - November 14","Y",40.79024,-73.94564,"East 104th St and Third Ave
+(40.79024, -73.94564)","East Harlem","7","July 11 - November 14"
+"269","New York","Harvest Home Harlem Hospital Farmers' Market","W. 137th St. & Lennox Ave. (Malcolm X. Blvd.)Manhattan","137th Street and Lennox Avenue","New York","NY",10037,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Friday  8am-5:30pm","July 5 - November 15","Y",40.81539,-73.93985,"137th Street and Lennox Avenue
+(40.81539, -73.93985)","Central Harlem","7","July 5 - November 15"
+"270","New York","Harvest Home Metropolitan Farmers' Market","99th St. on 3rd Ave.","East 99th St and Third Ave","New York","NY",10029,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Friday  8am-4pm","July 5 - November 15","Y",40.78713,-73.94792,"East 99th St and Third Ave
+(40.78713, -73.94792)","East Harlem","7","July 5 - November 15"
+"271","New York","Harvest Home Mt. Morris Park Farmers' Market","Marcus Garvey Park, Lenox Ave between W. 117th and W. 118th Street","East 124th St and Fifth Ave","New York","NY",10027,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Saturday  8am-4pm","June 15 - November 16","Y",40.80575,-73.94275,"East 124th St and Fifth Ave
+(40.80575, -73.94275)","Central Harlem","7","June 15 - November 16"
+"272","New York","Harvest Home West Harlem Farmers' Market","137th St. and Broadway","137th St and Broadway","New York","NY",10031,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Tuesday  8am-4pm","July 9 - November 19","Y",40.82136,-73.95404,"137th St and Broadway
+(40.82136, -73.95404)","Inwood and Washington Heights","7","July 9 - November 19"
+"273","New York","Herban Farmers' Market - Mt. Morris Park","Marcus Garvey Park,Mt. Morris Park btwn 122nd & 123rd Sts.btwn 122nd & 123rd Sts., Harlem","18 Mt Morris Park W","New York","NY",10027,"Tupacamaru Tiwoni",6463517611,"http://www.125thstreetfarmersmarket.com","Saturday  8am-3pm","June 22 - December 28","Y",40.80502,-73.9449,"18 Mt Morris Park W
+(40.80502, -73.9449)","Central Harlem","7","June 22 - December 28"
+"274","New York","Inwood Park Greenmarket","Isham St., btw Seaman & Cooper Sts.","Isham St and Seaman St","New York","NY",10034,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","Year-round","Y",40.86988,-73.9209,"Isham St and Seaman St
+(40.86988, -73.9209)","Inwood and Washington Heights","7","January 1 - December 31"
+"275","New York","Lower East Side Youthmarket","Grand Ave., along Abrons Arts Ctrbtwn Pitt St. & Abraham Place","Grand St and Pitt St","New York","NY",10002,"Ryan Morningstar",5089442083,"","Thursday  3pm - 7pm","July 11 - November 21","Y",40.71523,-73.9843,"Grand St and Pitt St
+(40.71523, -73.9843)","Lower East Side","7","July 11 - November 21"
+"276","New York","Morningside Park Farmers' Market","W. 110th St. and Manhattan Ave.","West 110th St and Manhattan Ave","New York","NY",10025,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Saturday  9am-5pm","May 25 - December 7","Y",40.80116,-73.95965,"West 110th St and Manhattan Ave
+(40.80116, -73.95965)","Upper West Side","7","May 25 - December 7"
+"277","New York","Mount Sinai Hospital Greenmarket","99th St., east of Madison Ave.Btw Madison & Park Aves.","East 99th St and Madison Ave","New York","NY",10029,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  8am-5pm","June 26 - November 27","Y",40.78918,-73.95276,"East 99th St and Madison Ave
+(40.78918, -73.95276)","East Harlem","7","June 26 - November 27"
+"278","New York","PATH Greenmarket","West Broadway,btwn Barclay & Park Place","Broadway and Park Pl","New York","NY",10007,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 6pm","Year-round","Y",40.7126,-74.00764,"Broadway and Park Pl
+(40.7126, -74.00764)","Lower Manhattan","7","January 1 - December 31"
+"279","New York","Port Authority Bus Terminal Greenmarket","Inside North Bus Terminal,8th Ave. & W. 42nd St.","8th Ave and West 42nd St","New York","NY",10036,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thursday  8am - 5pm","Year-round","Y",40.75723,-73.98979,"8th Ave and West 42nd St
+(40.75723, -73.98979)","Chelsea and Clinton","7","January 1 - December 31"
+"280","New York","Project EATS Frederick Douglas Houses Farmers' Market","Frederick Douglass Houses,830 Amsterdam Ave., W. 101 St. at Tennis Ct.Manhattan","830 Amsterdam Ave","New York","NY",10025,"Michelle Hodges",2126121528,"http://www.projecteats.org","Saturday  8am-12 Noon","June 8 - November 23","Y",40.79703,-73.96822,"830 Amsterdam Ave
+(40.79703, -73.96822)","Upper West Side","7","June 8 - November 23"
+"281","New York","Rockefeller Center Greenmarket","Rockefeller Plaza, at 50th","Rockefeller Plaza and West 50th St","New York","NY",10112,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wed/Thu/Fri  8am-5pm","July 24 - August 30","Y",40.75907,-73.97846,"Rockefeller Plaza and West 50th St
+(40.75907, -73.97846)","10112","1|1|5","July 24 - August 30"
+"282","New York","Saint Mark's Church Greenmarket","E. 10th St., at 2nd Ave.,in Abe Lebewohl Park","East 10th St and Second Ave","New York","NY",10003,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 7pm","June 4 - November 26","Y",40.72977,-73.98681,"East 10th St and Second Ave
+(40.72977, -73.98681)","Lower East Side","7","June 4 - November 26"
+"283","New York","SoHA Square Farmers' Market","NW Corner, W. 117th St. & Frederick Douglass Blvd., Manhattan","W 117th and Frederick Douglass Blvd","Manhattan","NY",10026,"Tiffany Simone",6312137642,"http://www.facebook.com/sohasquare","Thursday  11am-7pm","June 6 - December 19","Y",40.80511,-73.95487,"W 117th and Frederick Douglass Blvd
+(40.80511, -73.95487)","Central Harlem","7","June 6 - December 19"
+"284","New York","Staten Island Ferry Whitehall Greenmarket","4 South St., inside Ferry Terminal Bldg.","4 South St","New York","NY",10005,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tue/Fri  8am - 7pm","Year-round","Y",40.70155,-74.01213,"4 South St
+(40.70155, -74.01213)","Lower Manhattan","3|4","January 1 - December 31"
+"285","New York","Stuyvesant Town Greenmarket","Southend Stuyvesant Town Oval,near 14th St. loop, 1st Ave. & Ave. A","1 Stuyvesant Oval","New York","NY",10009,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  9:30am-4pm","April 21 - December 22","Y",40.73075,-73.978,"1 Stuyvesant Oval
+(40.73075, -73.978)","Lower East Side","7","April 21 - December 22"
+"286","New York","Tompkins Square Greenmarket","Tompkins Square ParkAve. A & E. 7th St.","Avenue A and East 7th St","New York","NY",10009,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  9am - 6pm","Year-round","Y",40.72606,-73.98354,"Avenue A and East 7th St
+(40.72606, -73.98354)","Lower East Side","7","January 1 - December 31"
+"287","New York","Tribeca Greenmarket","Greenwich St.,btwn Chambers & Duane Sts.","Greenwich St and Chambers St","New York","NY",10007,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wed/Sat  8am-3pm","Year-round","Y",40.71629,-74.01095,"Greenwich St and Chambers St
+(40.71629, -74.01095)","Lower Manhattan","3|4","January 1 - December 31"
+"288","New York","Tucker Square Greenmarket","Columbus Ave., at 66th Street","Columbus and West 66th St","New York","NY",10023,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Thu/Sat  8am - 5pm","Year-round","Y",40.77361,-73.98158,"Columbus and West 66th St
+(40.77361, -73.98158)","Upper West Side","2|5","January 1 - December 31"
+"289","New York","Union Square Greenmarket","Broadway & 17th St. to 14th St.W and N sides of Union Square Park","Broadway and West 17th St","New York","NY",10003,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","M/W/F/Sat  8am - 6pm","Year-round","Y",40.73712,-73.99029,"Broadway and West 17th St
+(40.73712, -73.99029)","Lower East Side","2|2|1|2","January 1 - December 31"
+"346","Queens","Astoria Greenmarket","14th St., btw 31st Ave. & 31st Rd.","14th St and 31st Ave","Astoria","NY",11106,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Wednesday  8am-3pm","July 10 - November 20","Y",40.76825,-73.93203,"14th St and 31st Ave
+(40.76825, -73.93203)","Northwest Queens","7","July 10 - November 20"
+"347","Queens","Corona Greenmarket","Roosevelt Ave. at 103rd St.","Roosevelt Ave and 103rd St","Corona","NY",11368,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Friday  8am - 3pm","July 5 - November 22","Y",40.7499,-73.86268,"Roosevelt Ave and 103rd St
+(40.7499, -73.86268)","West Queens","7","July 5 - November 22"
+"348","Queens","Elmhurst Hospital Greenmarket","41st Ave.,btw 80th & 81st Sts.","41st Ave and 80th St","Elmhurst","NY",11373,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Tuesday  8am - 4pm","June 4 - November 26","Y",40.74579,-73.88549,"41st Ave and 80th St
+(40.74579, -73.88549)","West Queens","7","June 4 - November 26"
+"349","Queens","Forest Hills Greenmarket","South side of Queens Blvd at 70th Ave., Queens","Queens Blvd and 70th Ave","Queens","NY",11375,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  8am-3pm","April 7 - December 29","Y",40.72188,-73.84639,"Queens Blvd and 70th Ave
+(40.72188, -73.84639)","West Central Queens","7","April 7 - December 29"
+"350","Queens","Harvest Home Roy Wilkins Park","177th and Baisley Blvd (entrance)Roy Wilkins Park","Merrick and Baisley Blvd","Queens","NY",11434,"Maritza Owens",2128283361,"http://www.harvesthomefm.org","Saturday  8am-4pm","July 6 - November 16","Y",40.68381,-73.76973,"Merrick and Baisley Blvd
+(40.68381, -73.76973)","Jamaica","7","July 6 - November 16"
+"351","Queens","Jackson Heights Greenmarket","Travers Park, btw 77th & 78th Sts.34th Ave., at 78th St.","34th Ave and 77th St","Jackson Heights","NY",11372,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Sunday  8am - 3pm","Year-round","Y",40.7532,-73.88968,"34th Ave and 77th St
+(40.7532, -73.88968)","West Queens","7","January 1 - December 31"
+"352","Queens","Jamaica Farmers' Market","160th St. off Jamaica Ave.","160th St and Jamaica Ave","Jamaica","NY",11432,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Fri/Sat  8:30am-4pm","June 21 - November 23","Y",40.70374,-73.79915,"160th St and Jamaica Ave
+(40.70374, -73.79915)","Jamaica","1|6","June 21 - November 23"
+"353","Queens","Joseph Addabbo FHC Farmers' Market","Joseph Addabbo FHC 6200 Beach Channel Dr, Parking Lot, Arverne","6200 Beach Channel Dr","Arverne","NY",11692,"Carline Desire",7189457150,"http://www.addabbo.org","Saturday  8am-2pm","July 6 - November 30","Y",40.5932,-73.79174,"6200 Beach Channel Dr
+(40.5932, -73.79174)","Rockaways","7","July 6 - November 30"
+"354","Queens","Long Island City Youthmarket","Vernon Blvd. btwn 47th & 48th Aves.","Vernon Blvd and 48th Ave","Long Island City","NY",11101,"Ryan Morningstar",5089442083,"","Saturday  9am-4pm","July 13 - October 23","Y",40.74401,-73.9537,"Vernon Blvd and 48th Ave
+(40.74401, -73.9537)","Northwest Queens","7","July 13 - October 23"
+"355","Queens","Pomonok Farmers' Market","QCH Pomonok Center, 67-09 Kissena Blvd., Flushing","67-09 Kissena Blvd","Flushing","NY",11365,"Amy Tam-Liao",7185916060,"http://www.qchnyc.org","Friday  10am-5pm","July 12 - November 29","Y",40.73529,-73.81463,"67-09 Kissena Blvd
+(40.73529, -73.81463)","Central Queens","7","July 12 - November 29"
+"356","Queens","Queens Botanical Garden Farmers' Market","Sidewalk off Garden, Dahlia Ave.,off Main St., Flushing","Main St and Dahlia Ave","Flushing","NY",11355,"Doug Ornstein",9149234837,"http://www.downtoearthmarkets.com","Friday  8:30am-4pm","June 21 - November 22","Y",40.75187,-73.82639,"Main St and Dahlia Ave
+(40.75187, -73.82639)","North Queens","7","June 21 - November 22"
+"357","Queens","Queens Hospital Center Farmers' Market","82-68 164th St., in front of Ambulatory Care Pavilion","82-68 164th St","Jamaica","NY",11432,"Marcy Stein-Albert, MD",7188834500,"","Thursday  7:30am-4pm","Year-round","Y",40.71755,-73.80357,"82-68 164th St
+(40.71755, -73.80357)","Jamaica","7","January 1 - December 31"
+"358","Queens","Ridgewood Youthmarket","Cypress, btwn Myrtle & Putnam Aves.,Veteran's Triangle (Parks)","Myrtle Ave and Cypress Ave","Ridgewood","NY",11385,"Ryan Morningstar",5089442083,"","Saturday  10am-3pm","July 13 - November 23","Y",40.70011,-73.90619,"Myrtle Ave and Cypress Ave
+(40.70011, -73.90619)","West Central Queens","7","July 13 - November 23"
+"359","Queens","Socrates Sculpture Park Greenmarket","Vernon Blvd. & Broadway","Vernon Blvd and Broadway","Astoria","NY",11106,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 4pm","June 1 - November 23","Y",40.76769,-73.93618,"Vernon Blvd and Broadway
+(40.76769, -73.93618)","Northwest Queens","7","June 1 - November 23"
+"360","Queens","Sunnyside Greenmarket","Skillman Ave.,btw 42nd & 43rd Sts.","Skillman Ave and 42nd St","Sunnyside","NY",11104,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","June 1 - December 21","Y",40.74699,-73.92173,"Skillman Ave and 42nd St
+(40.74699, -73.92173)","Northwest Queens","7","June 1 - December 21"
+"364","Richmond","Saint George Greenmarket","Theater Parking Lot,St. Mark's, at Hyatt Sts.","St Marks Pl and Hyatt St","Staten Island","NY",10301,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 2pm","May 4 - November 23","Y",40.64159,-74.07791,"St Marks Pl and Hyatt St
+(40.64159, -74.07791)","Stapleton and St. George","7","May 4 - November 23"
+"365","Richmond","Staten Island Mall Greenmarket","Richmond Ave. entrance,inside parking lot","2655 Richmond Ave","Staten Island","NY",10314,"Chelsea Whittaker",2127887476,"http://www.grownyc.org","Saturday  8am - 3pm","June 15 - November 23","Y",40.58091,-74.16911,"2655 Richmond Ave
+(40.58091, -74.16911)","Mid-Island","7","June 15 - November 23"
