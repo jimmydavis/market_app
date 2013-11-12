@@ -14,6 +14,11 @@
 
  /*just going to do CSS in here for now*/
 
+.main-body {
+    margin: 0 auto;
+    width: 1200px;
+}
+
 .header {
   display :inline-block;
   background-color: #f3f3f3;
@@ -33,10 +38,23 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family: 'Titan One', cursive;
-  letter-spacing: .05em;
-  font-size: 36px;
-  position: relative;
+    font-family: 'Titan One', cursive;
+    letter-spacing: .05em;
+    font-size: 36px;
+    position: relative;
+}
+
+.map-container {
+    height: 500px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+#map-canvas {
+    padding-left: 10px;
+    margin-left: 70px;
+    width: 45%;
+    height: 490px;
 }
 
 /*this is the login/signup/login links within nav*/
@@ -50,8 +68,9 @@ positioned top left of nav bar*/
  #left-hand-box {
   border: 1px solid black;
   float: left;
-  width: 50%;
+  width: 450px;
   height: 500px;
+  margin-right: 20px;
  }
 
 
@@ -204,5 +223,4 @@ border:0;
 }
 
 /*THIS ENDS CSS CODE FOR login/signup DROPDOWN*/
-
 
