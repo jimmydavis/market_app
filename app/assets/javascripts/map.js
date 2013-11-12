@@ -36,7 +36,6 @@ googleMap.addPins = function() {
     $.each(markets, function(i, market){
       var marketName = market.market_name;
       var marketId = market.id;
-      market.id =
 
       var marketLatLng = new google.maps.LatLng(market.latitude, market.longitude);
       var marker = new google.maps.Marker({

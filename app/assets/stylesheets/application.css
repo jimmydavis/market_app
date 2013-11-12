@@ -45,11 +45,11 @@ positioned top left of nav bar*/
 }
 
 #notice_container {
-  width: 25%;
+  width: 100%;
   margin: 0 auto;
   background-color: #FFF;
-  padding: 20px 40px;
-  margin-top: 20px;
+/*  padding: 20px 40px;*/
+/*  margin-top: 20px;*/
 }
 
 #flash_notice {
@@ -79,8 +79,9 @@ positioned top left of nav bar*/
 /*this is the login/signup/login links within nav*/
 .top_right_links {
   float: right;
-  margin: 0px 60px;
+  margin: 10px 30px;
   font-family: "Gudea";
+  padding: 10px;
 }
 
 

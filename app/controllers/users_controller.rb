@@ -38,7 +38,7 @@ class UsersController < ApplicationController
         # The below line will create a logged in session when a user signs up
         session[:user_id] = @user.id
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", notice: 'Error signing up, please try again...' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

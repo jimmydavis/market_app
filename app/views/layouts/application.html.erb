@@ -7,12 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render partial: 'layouts/header' %>
-    <div id="notice_container">
+      <div id="notice_container">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, id: "flash_#{name}" %>
       <% end %>
     </div>
+<%= render partial: 'layouts/header' %>
+
 <%= yield %>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<% ENV['GOOGLE_API_KEY'] %>&sensor=true">
