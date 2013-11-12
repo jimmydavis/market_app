@@ -21,5 +21,10 @@ CSV.parse(file, :headers => true) do |row|
     :neighborhood => row["neighborhood"],
     :days_between_markets => row["days_between_markets"],
     :season_date_range => row["season_date_range"]})
+
+
+
+
+
 end
 
