@@ -171,7 +171,7 @@ positioned top left of nav bar*/
     background:#39d;
 }
 
-#login_submit {
+#login_submit, #signup_submit {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     border:1px solid #39D;
