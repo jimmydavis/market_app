@@ -45,12 +45,13 @@ googleMap.addPins = function() {
         position: marketLatLng,
         title: marketName + ": " + marketLocation
       });
-      // creates a market and sets it on the map defined in above fn
+      // creates a marker for a market and sets it on the map defined in above fn
       marker.setMap(map);
       // eventlistener for each marker
+
       google.maps.event.addListener(marker, "click", function() {
         $(".info-text").addClass("hidden");
-        $(".market").text(marketName + " " + marketLocation + " " + market.address_line_1 + " " + market.market_link);
+        $(".market").html(marketName + '<br />' + marketLocation + '<br />' + market.address_line_1 + '<br />' + market.market_link);
           // operation_hours
           // operation_season
           // );

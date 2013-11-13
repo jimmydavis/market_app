@@ -44,23 +44,6 @@ positioned top left of nav bar*/
   position: relative;
 }
 
-#notice_container {
-  width: 25%;
-  margin: 0 auto;
-  background-color: #FFF;
-  padding: 20px 40px;
-  margin-top: 20px;
-}
-
-#flash_notice {
-    padding: 5px 8px;
-    margin: 10px 0;
-    background-color: #CFC;
-    border: solid 1px #6C6;
-    text-align: center;
-}
-
-
 .map-container {
   height: 500px;
   width: 500px;
@@ -78,7 +61,7 @@ positioned top left of nav bar*/
 /*this is the login/signup/login links within nav*/
 .top_right_links {
   float: right;
-  margin: 0px 60px;
+  margin: 25px 60px;
   font-family: "Gudea";
 }
 
@@ -131,8 +114,6 @@ a img {
     font-size:11px;
     line-height:23px;
     text-align:right;
-    float: right;
-    margin: 10px;
 }
 #topnav a.login, #topnav a.signup {
     background:#88bbd4;
@@ -175,7 +156,7 @@ a.login, a.signup {
     width:170px;
 }*/
 a.login.menu-open span {
-/*    background-image:url("images/toggle_up_dark.png");*/
+    background-image:url("images/toggle_up_dark.png");
     color:#789;
 }
 
@@ -232,10 +213,10 @@ a.login.menu-open span {
 #login_menu p a {
     color:#27B!important;
 }
-#login_submit, #signup_submit {
+#login_submit {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
-    background:#39d repeat-x scroll 0 0;
+    background:#39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
     border:1px solid #39D;
     color:#fff;
     text-shadow:0 -1px 0 #39d;
