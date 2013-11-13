@@ -51,11 +51,26 @@ googleMap.addPins = function() {
 
       google.maps.event.addListener(marker, "click", function() {
         $(".info-text").addClass("hidden");
-        $(".market").html(marketName + '<br />' + marketLocation + '<br />' + market.address_line_1 + '<br />' + market.market_link);
-          // operation_hours
-          // operation_season
-          // );
-
+        $("#favorite-button").removeClass("hidden");
+        $(".market").html(
+                      "Name: " + marketName + '<br />'
+                      + marketLocation + '<br />'
+                      + market.address_line_1 + '<br />'
+                      + market.operation_hours + '<br />'
+                      + market.operation_season + '<br />'
+                      + market.market_link
+                      );
+        $("#favorite-button").on("click", function(e){
+          // var favData = { user_id: $("#favorite-button").data("user_id"),  };
+          debugger
+          $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: "/favorites/"
+            // data:
+            // user_id, market.id
+          }).done
+        })
       });
     });
   });

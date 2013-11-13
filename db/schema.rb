@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131112025611) do
+ActiveRecord::Schema.define(:version => 20131113210437) do
+
+  create_table "favorites", :force => true do |t|
+    t.integer  "market_id"
+    t.integer  "user_id"
+    t.text     "comments"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "market_dates", :force => true do |t|
     t.integer  "market_id"
