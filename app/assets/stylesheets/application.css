@@ -12,11 +12,14 @@
  *= require_tree .
  */
 
- /*just going to do CSS in here for now*/
+ /*just going to do  in here for now*/
+
+
 
 .main-body {
   margin: 0 auto;
-  width: 1200px;
+  width: 1810px;
+  height: 600px;
 }
 
 .header {
@@ -63,7 +66,7 @@ positioned top left of nav bar*/
 
 .map-container {
   height: 500px;
-  width: 500px;
+  width: 960px;
   margin: 0 auto;
   float: left;
 }
@@ -71,8 +74,8 @@ positioned top left of nav bar*/
 #map-canvas {
   padding-left: 10px;
   margin-left: 70px;
-  width: 95%;
-  height: 490px;
+  width: 960px;
+  height: 500px;
 }
 
 /*this is the login/signup/login links within nav*/
