@@ -44,6 +44,7 @@ positioned top left of nav bar*/
   position: relative;
 }
 
+
 #notice_container {
   width: 100%;
   margin: 0 auto;
@@ -57,6 +58,7 @@ positioned top left of nav bar*/
     border: solid 1px #6C6;
     text-align: center;
 }
+
 
 
 .map-container {
@@ -89,7 +91,6 @@ positioned top left of nav bar*/
   margin: 20px 20px;
   float: left;
 }
-
 
 
 .info-text h2 {
@@ -127,9 +128,7 @@ positioned top left of nav bar*/
 }
 #topnav a.login:hover, #topnav a.signup:hover {
     background:#59B;
-
 }
-
 
 
 #login_menu, #signup_menu {
@@ -170,6 +169,11 @@ positioned top left of nav bar*/
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     background:#39d;
+}
+
+#login_submit {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
     border:1px solid #39D;
     color:#fff;
     text-shadow:0 -1px 0 #39d;
@@ -178,6 +182,7 @@ positioned top left of nav bar*/
     margin:0 5px 0 0;
     font-weight:bold;
 }
+
 #login_submit::-moz-focus-inner {
 padding:0;
 border:0;
