@@ -3,9 +3,7 @@ require "csv"
 Market.delete_all
 MarketDate.delete_all
 
-# TODO -- may need to change path to get this to work in Heroku
-# file = File.open("/Users/jamesmdavis5/ga_wdi/heroku/project_two/market_app/db/20131111_nycmarket.csv","r")
-file = File.open("/Users/thomasmetzger/ga_wdi/heroku/market_app/db/20131111_nycmarket.csv","r")
+file = File.open("public/20131112_nycmarket.csv","r")
 
 CSV.parse(file, :headers => true) do |row|
   Market.create! ({
@@ -52,3 +50,16 @@ sql_markets.each do |market|
     end
   end
 end
+
+
+# this code adds in the one date for the market at Ninth Ave., Balsley ParkBtw 56th & 57th Sts.
+connection = ActiveRecord::Base.connection();
+single_market_result = connection.execute("select id from markets where location = 'Ninth Ave., Balsley ParkBtw 56th & 57th Sts.';")
+
+single_market = {market_id: single_market_result.to_a[0]["id"].to_i}
+single_market[:date_open] = Date.parse("April 20 2013")
+single_market[:week_number] = single_market[:date_open].strftime("%W").to_i
+MarketDate.create(single_market)
+
+
+
