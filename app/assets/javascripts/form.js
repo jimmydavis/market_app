@@ -62,11 +62,12 @@ var createUser = function(e) {
   }).done(function(data) {
     console.log(data);
     $("#signup_form")[0].reset();
-  // the below line would fade in and fade out a notice that says "Created user.name"
-  // $("#notice").append($("<p>").text("Created " + data.name).delay(2000).fadeOut(400));
-  // # TODO make the login and signup disappear and make the favorites and logout appear
 });
 };
 
-// I want to have the flash notices fade out after a user logs in and logs out
-// $("#notice_container").delay(2000).fadeOut(400));
+// This function makes flash notices fade in and fade out after logging in/out
+$(function() {
+   $('#flash_notice').delay(500).fadeIn('normal', function() {
+      $(this).delay(1000).fadeOut();
+   });
+});

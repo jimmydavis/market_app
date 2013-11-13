@@ -44,6 +44,25 @@ positioned top left of nav bar*/
   position: relative;
 }
 
+
+#notice_container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+/*  padding: 20px 40px;*/
+/*  margin-top: 20px;*/
+}
+
+#flash_notice {
+    padding: 5px 8px;
+    margin: 10px 0;
+    background-color: #CFC;
+    border: solid 1px #6C6;
+    text-align: center;
+}
+
+
+
 .map-container {
   height: 500px;
   width: 500px;
@@ -61,8 +80,13 @@ positioned top left of nav bar*/
 /*this is the login/signup/login links within nav*/
 .top_right_links {
   float: right;
+<<<<<<< HEAD
   margin: 25px 60px;
+=======
+  margin: 10px 30px;
+>>>>>>> master
   font-family: "Gudea";
+  padding: 10px;
 }
 
 /* left hand side on the homepage */
