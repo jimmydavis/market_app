@@ -27,5 +27,24 @@ d3.json("boroughs.json", function(error, data) {
         .attr("class", "area")
         .attr("fill", "#7A8B8B");
 
+        d3.json("/markets.json", function(error, data) {
+            console.log(data);
+            group.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", function(d) {
+                debugger;
+                        return projection([d.longitude, d.latitude])[0];
+                })
+                .attr("cy", function(d) {
+                        return projection([d.longitude, d.latitude])[1];
+                })
+                .attr("r", 10)
+                .attr("opacity", ".7")
+                .style("fill", "#2c344a");
+
+    })
+
 
 });
