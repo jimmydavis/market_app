@@ -3,7 +3,7 @@ require "csv"
 Market.delete_all
 MarketDate.delete_all
 
-file = File.open("public/20131112_nycmarket.csv","r")
+file = File.open("db/20131112_nycmarket.csv","r")
 
 CSV.parse(file, :headers => true) do |row|
   Market.create! ({
