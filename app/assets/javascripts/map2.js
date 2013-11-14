@@ -7,7 +7,6 @@ var svg = d3.select("#map-canvas").append("svg")
 
 d3.json("boroughs.json", function(error, data) {
     // console.log(data);
-
     var group = svg.selectAll("g")
     // take data and objects nyc boros and take that features property for that
         .data(topojson.feature(data, data.objects.new_york_city_boroughs).features)
@@ -29,10 +28,11 @@ d3.json("boroughs.json", function(error, data) {
 
         d3.json("/markets.json", function(error, data) {
             console.log(data);
-            group.selectAll("circle")
+            group.selectAll(".circle")
                 .data(data)
                 .enter()
                 .append("circle")
+                .attr("class", "circle")
                 .attr("cx", function(d) {
                         return projection([d.longitude, d.latitude])[0];
                 })
@@ -43,11 +43,28 @@ d3.json("boroughs.json", function(error, data) {
                 .attr("opacity", ".3")
                 .style("fill", "#1abc9c");
 
-        // click event listener for each market's
-        d3.selectAll("circle")
+                    // creates the slider element on the page, must background-color css to see
+                    $( "#slider" ).slider({
+                        value: 1, //TODO this will be current date
+                        min: 1,
+                        max: 365,
+                        step: 1,
+                        slide: function( event, ui ){
+                          setSlide(ui.value);
+                        }
+                      });
+
+                    // Creates the slide function that will update what circle elements are displayed on the map
+                    function setSlide(dayValue) {
+                        g.selectAll(".circle")
+                            .data(data)
+                    }
+
+            // click event listener for each market's
+            d3.selectAll(".circle")
                 .on("click", function(d) {
                     d3.select(".market").html(d.market_name + "<br>" + d.neighborhood + "<br>" + d.market_link + "<br>" + d.operation_hours + "<br>" + d.operation_season);
-                });
+        });
     });
         d3.slider().value(50).orientation("vertical");
 

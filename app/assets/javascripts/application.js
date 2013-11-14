@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
-
+//= require d3.v3.min
+//= require topojson.v1.min
+//= require jquery-ui-1.10.3.custom.min
+//= require map2.js

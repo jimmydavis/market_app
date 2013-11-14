@@ -127,6 +127,7 @@
   margin-left: 15px;
   margin-top: 40px;
   line-height: 125%;
+  height: 150px;
 }
 
 
@@ -232,6 +233,28 @@ circle {
   cursor: pointer;
 }
 
+
+/*==============================================================*/
+/* Slider & play button */
+/*==============================================================*/
+
+#slider-wrap{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: .15em;
+  padding: 10px 0 3px 0;
+  margin-bottom: 15px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#slider {
+  margin: 10px 0 15px 0;
+  width: 365px;
+  border-bottom: 2px solid #b9bfc3  ;
+  background-color: black;
+}
 /*==============================================================*/
 /* This is the styling for the markets/:id page ____ it is also referred to as the directions page */
 /*==============================================================*/
