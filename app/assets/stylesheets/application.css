@@ -214,30 +214,29 @@ border:0;
   border: 1px solid red;
 }
 
-/* Id for the div containing labels for the information about each market*/
-#info-page-labels {
-  display: inline-block;
-  width: 150px;
-  vertical-align: top;
-}
-
 /* class applied to each label that identifies the pieces of detailed information about the market*/
 .info-labels {
+  width: 150px;
   text-align: right;
+  float: left;
   padding-right: 10px;
-}
-
-/* Id for the div containing the information about each market*/
-#info-page-info {
-  display: inline-block;
-  width: 250px;
 }
 
 /* class applied to each piece of detailed information about a single market*/
 .info-data {
-
+  width: 250px;
+  float: left;
 }
 
+/* empty p-tags facilitate spacing for address, need height, change if line height changes*/
+.empty-ptag {
+  height: 17px;
+}
 
+#favorites-button-show-page {
+  /*float: left;*/
+}
 
+#get-directions-button {
 
+}
