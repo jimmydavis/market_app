@@ -152,7 +152,7 @@ positioned top left of nav bar*/
     font-size:11px;
 }
 
-#login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password] {
+#login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password], #login_menu input[type=email], #signup_menu input[type=email] {
     display:block;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;

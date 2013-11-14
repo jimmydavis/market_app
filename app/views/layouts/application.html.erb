@@ -14,10 +14,23 @@
     </div>
 <%= render partial: 'layouts/header' %>
 
+<p>
+  <label for="date">Day #:</label>
+  <input type="text" id="date" style="border: 0; color: #f6931f; font-weight: bold;" />
+</p>
+
+<div id="slider"></div>
+
 <%= yield %>
+
+
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<% ENV['GOOGLE_API_KEY'] %>&sensor=true">
   </script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
 
 
 </body>

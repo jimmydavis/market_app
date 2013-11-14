@@ -54,23 +54,22 @@ googleMap.addPins = function() {
         $("#favorite-button").removeClass("hidden");
         $(".market").html(
                       "Name: " + marketName + '<br />'
-                      + marketLocation + '<br />'
                       + market.address_line_1 + '<br />'
                       + market.operation_hours + '<br />'
                       + market.operation_season + '<br />'
                       + market.market_link
                       );
         $("#favorite-button").on("click", function(e){
-          // var favData = { user_id: $("#favorite-button").data("user_id"),  };
+          var favData = { user_id: $("#favorite-button").data("user_id"), market_id: marketId };
           debugger
           $.ajax({
             dataType: "json",
             type: "POST",
-            url: "/favorites/"
-            // data:
+            url: "/favorites.json",
+            data: favData
             // user_id, market.id
           }).done
-        })
+        });
       });
     });
   });
