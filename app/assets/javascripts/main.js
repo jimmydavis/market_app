@@ -17,7 +17,7 @@ $(document).ready(function() {
       max: 365,
       step: 1,
       slide: function( event, ui ) {
-        $( "#date" ).val(ui.value );
+        $( "#date" ).val( ui.value );
       }
     });
     $( "#date" ).val( $( "#slider" ).slider( "value" ) );
