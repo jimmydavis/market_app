@@ -34,7 +34,6 @@ d3.json("boroughs.json", function(error, data) {
                 .enter()
                 .append("circle")
                 .attr("cx", function(d) {
-                debugger;
                         return projection([d.longitude, d.latitude])[0];
                 })
                 .attr("cy", function(d) {
