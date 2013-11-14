@@ -31,6 +31,7 @@
   width: 100%;
 }
 
+
 /*this is title of page,
 positioned top left of nav bar*/
 .title {
@@ -41,7 +42,7 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family: 'Titan One', cursive;
+  font-family: 'Georgia';
   letter-spacing: .05em;
   font-size: 36px;
   position: relative;
@@ -71,7 +72,7 @@ positioned top left of nav bar*/
 
 #map-canvas {
   padding-left: 10px;
-  margin-left: 70px;
+
   width: 960px;
   height: 500px;
 }
@@ -89,17 +90,41 @@ positioned top left of nav bar*/
   float: left;
   width: 450px;
   height: 500px;
-  margin: 20px 20px;
+/*  margin: 20px 20px;*/
+  margin-top:; 20px;
+  margin-left: 50px;
   float: left;
 }
 
-
 .info-text h2 {
-  font-size: 20px;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: #282828 ;
+/*  margin: 5px;*/
+}
+
+.info-text p {
+  font-size: 18px;
+  font-family: Helvetica;
+  margin: 15px;
+  /*font: #7a8b8b; /*gunmetal*/*/
+  margin-left: 20px;
+  line-height: 150%;
+  color: #383838;
 }
 
 .hidden {
   display: none;
+}
+
+.market {
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #686868;
+  margin-left: 15px;
+  margin-top: 40px;
+  line-height: 125%;
 }
 
 
@@ -109,7 +134,7 @@ positioned top left of nav bar*/
 /*this is the div that holds the log in and sign up buttons*/
 #topnav {
     padding: 10px 0px 12px;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 23px;
     text-align: right;
     float: right;
@@ -121,7 +146,7 @@ positioned top left of nav bar*/
     background:#88bbd4;
     padding:4px 6px 6px;
     text-decoration:none;
-    font-weight:bold;
+    font-weight: bold;
     color:#fff;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -193,6 +218,10 @@ border:0;
 #login_submit:hover, #login_submit:focus, #signup_submit:hover, #signup_submit:focus {
     background-position:0 -5px;
     cursor:pointer;
+}
+
+circle {
+  cursor: pointer;
 }
 
 /*THIS ENDS CSS CODE FOR login/signup DROPDOWN*/
