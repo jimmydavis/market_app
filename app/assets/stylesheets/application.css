@@ -186,13 +186,11 @@ footer {
     padding:4px 6px 6px;
     text-decoration:none;
     font-weight: bold;
-    color: rgba(0,0,0,.2);
+    color: rgba(0,0,0,.4);
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-}
-#topnav a.login:hover, #topnav a.signup:hover {
-    background:#59B;
+    font-family: Gotham;
 }
 
 
