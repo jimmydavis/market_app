@@ -39,11 +39,36 @@ d3.json("boroughs.json", function(error, data) {
                 .attr("cy", function(d) {
                         return projection([d.longitude, d.latitude])[1];
                 })
-                .attr("r", 10)
-                .attr("opacity", ".7")
-                .style("fill", "#2c344a");
+                .attr("r", 12)
+                .attr("opacity", ".3")
+                .style("fill", "#1abc9c");
 
-    })
+        // click event listener for each market's
+        d3.selectAll("circle")
+                .on("click", function(d) {
+                    d3.select(".market").html(d.market_name + "<br>" + d.neighborhood + "<br>" + d.market_link + "<br>" + d.operation_hours + "<br>" + d.operation_season);
+                });
+    });
+        d3.slider().value(50).orientation("vertical");
 
 
 });
+
+        // function to pull markets that are open by week
+        // d3.json("fake_data.json", function(error, data) {
+        //         // group.selectAll("circle")
+        //         console.log(data)
+                // .data(data)
+                // .enter()
+                // .append("circle")
+                // .attr("cx", function(d) {
+                //         return projection([d.longitude, d.latitude])[0];
+                // })
+                // .attr("cy", function(d) {
+                //         return projection([d.longitude, d.latitude])[1];
+                // })
+                // .attr("r", 10)
+                // .attr("opacity", ".5")
+                // .style("fill", "#2c344a");
+
+
