@@ -12,11 +12,13 @@
  *= require_tree .
  */
 
- /*just going to do CSS in here for now*/
-
+ /*just going to do  in here for now*/
 .main-body {
   margin: 0 auto;
-  width: 1200px;
+  width: 1810px;
+  height: 600px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
 }
 
 .header {
@@ -28,8 +30,11 @@
   width: 100%;
 }
 
-/*this is title of page,
-positioned top left of nav bar*/
+
+/*==============================================================*/
+/*this is title of page, positioned top left of nav bar*/
+/*==============================================================*/
+
 .title {
   float:left;
   color: rgba(0,0,0,.8);
@@ -38,12 +43,11 @@ positioned top left of nav bar*/
 }
 
 .title_text {
-  font-family: 'Titan One', cursive;
+  font-family: 'Georgia';
   letter-spacing: .05em;
   font-size: 36px;
   position: relative;
 }
-
 
 #notice_container {
   width: 100%;
@@ -61,19 +65,21 @@ positioned top left of nav bar*/
 
 .map-container {
   height: 500px;
-  width: 500px;
+  width: 960px;
   margin: 0 auto;
   float: left;
 }
 
 #map-canvas {
   padding-left: 10px;
-  margin-left: 70px;
-  width: 95%;
-  height: 490px;
+
+  width: 960px;
+  height: 500px;
 }
 
+/*==============================================================*/
 /*this is the login/signup/login links within nav*/
+/*==============================================================*/
 .top_right_links {
   float: right;
   margin: 10px 30px;
@@ -86,27 +92,52 @@ positioned top left of nav bar*/
   float: left;
   width: 450px;
   height: 500px;
-  margin: 20px 20px;
+/*  margin: 20px 20px;*/
+  margin-top:; 20px;
+  margin-left: 50px;
   float: left;
 }
 
-
 .info-text h2 {
-  font-size: 20px;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: #282828 ;
+/*  margin: 5px;*/
+}
+
+.info-text p {
+  font-size: 18px;
+  font-family: Helvetica;
+  margin: 15px;
+  /*font: #7a8b8b; /*gunmetal*/*/
+  margin-left: 20px;
+  line-height: 150%;
+  color: #383838;
 }
 
 .hidden {
   display: none;
 }
 
+.market {
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #686868;
+  margin-left: 15px;
+  margin-top: 40px;
+  line-height: 125%;
+}
 
 
+/*==============================================================*/
  /*THIS BEGINS CODE FOR login DROPDOWN*/
+/*==============================================================*/
 
 /*this is the div that holds the log in and sign up buttons*/
 #topnav {
     padding: 10px 0px 12px;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 23px;
     text-align: right;
     float: right;
@@ -118,7 +149,7 @@ positioned top left of nav bar*/
     background:#88bbd4;
     padding:4px 6px 6px;
     text-decoration:none;
-    font-weight:bold;
+    font-weight: bold;
     color:#fff;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -192,5 +223,50 @@ border:0;
     cursor:pointer;
 }
 
-/*THIS ENDS CSS CODE FOR login/signup DROPDOWN*/
 
+/*==============================================================*/
+/* MAP SPECIFIC CSS
+/*==============================================================*/
+
+circle {
+  cursor: pointer;
+}
+
+/*==============================================================*/
+/* This is the styling for the markets/:id page ____ it is also referred to as the directions page */
+/*==============================================================*/
+
+/* section on left-hand side of page containing detailed information about a market*/
+#info-section {
+  width: 420px;
+  margin: 0;
+  padding:0;
+  border: 1px solid red;
+}
+
+/* class applied to each label that identifies the pieces of detailed information about the market*/
+.info-labels {
+  width: 150px;
+  text-align: right;
+  float: left;
+  padding-right: 10px;
+}
+
+/* class applied to each piece of detailed information about a single market*/
+.info-data {
+  width: 250px;
+  float: left;
+}
+
+/* empty p-tags facilitate spacing for address, need height, change if line height changes*/
+.empty-ptag {
+  height: 17px;
+}
+
+#favorites-button-show-page {
+  /*float: left;*/
+}
+
+#get-directions-button {
+
+}

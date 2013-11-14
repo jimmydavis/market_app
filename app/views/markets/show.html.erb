@@ -1,8 +1,15 @@
-<h1><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1> <br>
-Location: <%= @market.location %> <br>
-Operation season: <%= @market.operation_season %> <br>
-Hours of Operation: <%= @market.operation_hours %> <br>
-Address: <%= @market.address_line_1 %> <br><br>
+<h1><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1>
+<section id="info-section">
+  <p class="info-labels">Hours of Operation:</p>
+    <p class="info-data"><%= @market.operation_hours %></p>
+  <p class="info-labels">Operation season:</p>
+    <p class="info-data"><%= @market.operation_season %></p>
+  <p class="info-labels">Address:</p>
+    <p class="info-data"><%= @market.address_line_1 %></p>
+  <p class="info-labels empty-ptag"></p>
+    <p class="info-data"><%= @market.city %>, <%= @market.state %> <%= @market.zip_code %></p>
 
-<a href="#">Add to Favorites</a> <br>
-<a href="#">Get Directions</a>
+  <a href="#" id="favorites-button-show-page">Add to Favorites</a>
+  <a href="#" id="get-directions-button">Get Directions</a>
+</section>
+
