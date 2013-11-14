@@ -40,8 +40,8 @@ d3.json("boroughs.json", function(error, data) {
                         return projection([d.longitude, d.latitude])[1];
                 })
                 .attr("r", 12)
-                .attr("opacity", ".3")
-                .style("fill", "#1abc9c");
+                .attr("opacity", "0.1")
+                .style("fill", "#ffffff");
 
                     // creates the slider element on the page, must background-color css to see
                     $( "#slider" ).slider({
@@ -57,11 +57,20 @@ d3.json("boroughs.json", function(error, data) {
 
                     // Creates the slide function that will update what circle elements are displayed on the map
                     function setSlide(dayValue) {
-
                         group.selectAll(".circle")
-
-                            .data(data)
+                            .data(data);
                     }
+
+                    // function setSlide(i) {
+                    //     $("#slider").slider("value",i);
+                    //     currentSlide = i;
+                    // }
+
+                    // THIS CODE SELECTS THE CIRCLES BASED ON THE DATA_OPEN VALUE
+                    // group.selectAll(".circle")[0]
+                    // foo[0].__data__.date_open
+
+
 
             // click event listener for each market's
             d3.selectAll(".circle")
