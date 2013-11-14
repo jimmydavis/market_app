@@ -13,9 +13,6 @@
  */
 
  /*just going to do  in here for now*/
-
-
-
 .main-body {
   margin: 0 auto;
   width: 1810px;
@@ -31,8 +28,9 @@
   width: 100%;
 }
 
-/*this is title of page,
-positioned top left of nav bar*/
+/*==============================================================*/
+/*this is title of page, positioned top left of nav bar*/
+/*==============================================================*/
 .title {
   float:left;
   color: rgba(0,0,0,.8);
@@ -76,7 +74,9 @@ positioned top left of nav bar*/
   height: 500px;
 }
 
+/*==============================================================*/
 /*this is the login/signup/login links within nav*/
+/*==============================================================*/
 .top_right_links {
   float: right;
   margin: 10px 30px;
@@ -103,8 +103,9 @@ positioned top left of nav bar*/
 }
 
 
-
+/*==============================================================*/
  /*THIS BEGINS CODE FOR login DROPDOWN*/
+/*==============================================================*/
 
 /*this is the div that holds the log in and sign up buttons*/
 #topnav {
@@ -195,5 +196,34 @@ border:0;
     cursor:pointer;
 }
 
+/*==============================================================*/
 /*THIS ENDS CSS CODE FOR login/signup DROPDOWN*/
+/*==============================================================*/
+
+/*==============================================================*/
+/*This is the styling for the markets/:id page ____ it is also referred to as the directions page */
+/*==============================================================*/
+
+/* class applied to the div containing labels for the information about each market*/
+.info-page-labels {
+
+}
+
+/* class applied to each label that identifies the pieces of detailed information about the market*/
+.info-labels {
+
+}
+
+/* class applied to the div containing the information about each market*/
+.info-page-info {
+
+}
+
+/* class applied to each piece of detailed information about a single market*/
+.info-data {
+
+}
+
+
+
 
