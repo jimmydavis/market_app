@@ -26,7 +26,6 @@ googleMap.createMap = function() {
 
 // adds pins to the map for each of the market points
 googleMap.addPins = function() {
-
   // ajax get for all users
   $.ajax({
     dataType: "json",
