@@ -23,22 +23,6 @@
 
 // };
 
-
-<<<<<<< HEAD
-// adds pins to the map for each of the market points
-googleMap.addPins = function() {
-  // ajax get for all users
-  $.ajax({
-    dataType: "json",
-    type: "GET",
-    url: "/markets"
-  }).done(function(markets){
-    // iterates through each of the market in the markets object
-    $.each(markets, function(i, market){
-      var marketName = market.market_name;
-      var marketId = market.id;
-      var marketLocation = market.location;
-=======
 // // adds pins to the map for each of the market points
 // googleMap.addPins = function() {
 
@@ -53,7 +37,6 @@ googleMap.addPins = function() {
 //       var marketName = market.market_name;
 //       var marketId = market.id;
 //       var marketLocation = market.location;
->>>>>>> origin/master
 
 //       // adds a location for each market and gives it some attributes
 //       var marketLatLng = new google.maps.LatLng(market.latitude, market.longitude);
