@@ -19,7 +19,7 @@ class SessionController < ApplicationController
       # TODO haven't set up login path
       # Not sure what we're going to do here,
       # want to have AJAX login so not sure if it would be a path or not
-      redirect_to login_path, notice: "Incorrect email or password. Please try again..."
+      redirect_to root_path, notice: "Incorrect email or password. Please try again..."
     end
   end
 
