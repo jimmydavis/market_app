@@ -1,5 +1,5 @@
 var width = 650,
-    height = 700;
+    height = 800;
 
 var svg = d3.select("#map-canvas").append("svg")
     .attr("width", width)
@@ -50,23 +50,34 @@ d3.json("boroughs.json", function(error, data) {
                         max: 365,
                         step: 1,
                         slide: function( event, ui ){
+                            console.log(ui.value);
                           setSlide(ui.value);
                         }
                       });
 
                     // Creates the slide function that will update what circle elements are displayed on the map
                     function setSlide(dayValue) {
-                        g.selectAll(".circle")
+
+                        group.selectAll(".circle")
+
                             .data(data)
                     }
 
             // click event listener for each market's
             d3.selectAll(".circle")
                 .on("click", function(d) {
-                    d3.select(".market").html(d.market_name + "<br>" + d.neighborhood + "<br>" + d.market_link + "<br>" + d.operation_hours + "<br>" + d.operation_season);
+                    d3.selectAll(".circle").style("fill", "#1abc9c");
+                    d3.select(this)
+                        .style("fill", null);
+                        $(".market").fadeOut(500, function() {
+                            d3.select(".market")
+                                .html(d.market_name + "<br>" + d.neighborhood + "<br>" + d.operation_hours + "<br>" + d.operation_season + "<br>" + "<a href=" + "/markets/" + d.markets_id + ">More info ...</a>");
+                                $(".market").fadeIn(500);
+                        });
+
         });
     });
-        d3.slider().value(50).orientation("vertical");
+
 
 
 });

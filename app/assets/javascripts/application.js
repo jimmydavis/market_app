@@ -16,3 +16,4 @@
 //= require topojson.v1.min
 //= require jquery-ui-1.10.3.custom.min
 //= require map2.js
+//= require form.js

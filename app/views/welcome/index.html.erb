@@ -1,12 +1,14 @@
-<div class="main-body">
+ <%= render partial: 'layouts/header' %>
+
+<div class="cf main-body">
 
   <div class="left-hand-box">
     <div class="info-text">
-      <h2>FARMERS MARKETS</h2>
+      <h2><a href="/">nyc farmers markets</a></h2>
       <p>
-        The following data was compiled from New York State's Open Data Portal. The markers show the locations of farmers markets in the New York City area in 2013.
-      </p>
-      </div>
+        The circles show the locations of farmers markets in the New York City area in 2013.  Click a circle to view more information about that market.</p>
+    </div>
+
 
     <div class="market"></div>
     <button class="hidden" data-user_id="<%= current_user.try(:id) %>" id="favorite-button">Add to Favorites</button>
@@ -26,4 +28,4 @@
 
 </div>
 
-
+  <%= render partial: 'layouts/footer' %>
