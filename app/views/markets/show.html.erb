@@ -1,6 +1,6 @@
 <div class="home-link"><a href="/">nyc farmers markets</a></div>
 
-<h1><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1>
+<h1 class="info-market-name"><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1>
 <section id="info-section">
   <p class="info-labels">Hours of Operation:</p>
     <p class="info-data"><%= @market.operation_hours %></p>
@@ -12,6 +12,7 @@
     <p class="info-data"><%= @market.city %>, <%= @market.state %> <%= @market.zip_code %></p>
 
   <a href="#" id="favorites-button-show-page">Add to Favorites</a>
-  <a href="#" id="get-directions-button">Get Directions</a>
+
+
 </section>
 

@@ -102,10 +102,19 @@ footer {
 .header_links {
   right: 0;
   margin: 10px 30px;
-  font-family: "Gudea";
+  font-family: Gotham;
   padding: 10px;
   position: absolute;
 }
+
+.header_links a {
+  color: rgba(0,0,0,.6);
+}
+
+.header_links a:hover {
+  color: rgba(0,0,0,.8);
+}
+
 
 /* left hand side on the homepage */
 .left-hand-box {
@@ -172,7 +181,7 @@ footer {
 /*==============================================================*/
 
 /*this is the div that holds the log in and sign up buttons*/
-#topnav {
+#topnav, .header_links {
     padding: 10px 0px 12px;
     font-size: 14px;
     line-height: 23px;
@@ -193,6 +202,10 @@ footer {
     font-family: Gotham;
 }
 
+#topnav a.login:hover, #topnav a.signup:hover {
+  color: rgba(0,0,0,.6);
+}
+
 
 #login_menu, #signup_menu {
     -moz-border-radius-topleft:5px;
@@ -202,27 +215,27 @@ footer {
     -webkit-border-bottom-left-radius:5px;
     -webkit-border-bottom-right-radius:5px;
     display:none;
-    background-color:#ddeef6;
+    background-color: #e6e6e6;
     position:absolute;
     width:210px;
     z-index:100;
-    border:1px transparent;
+    border:1px;
     text-align:left;
     padding:12px;
     top: 24.5px;
     right: 0px;
     margin-top:5px;
     margin-right: 0px;
-    color:#789;
-    font-size:11px;
+    color:rgba(0,0,0,0.8);
+    font-size:16px;
 }
 
 #login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password], #login_menu input[type=email], #signup_menu input[type=email] {
     display:block;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
-    border:1px solid #ACE;
-    font-size:13px;
+    /*border:1px solid #e6232f*/;
+    font-size:12px;
     margin:0 0 5px;
     padding:5px;
     width:203px;
@@ -231,27 +244,21 @@ footer {
 #login_submit, #signup_submit {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
-    background:#39d;
-}
-
-#login_submit, #signup_submit {
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border:1px solid #39D;
+    background:#e6232f;
+    border-style: outset;
     color:#fff;
-    text-shadow:0 -1px 0 #39d;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.8);
     padding:4px 10px 5px;
-    font-size:11px;
+    font-size:12px;
     margin:0 5px 0 0;
     font-weight:bold;
 }
 
-#login_submit::-moz-focus-inner {
-padding:0;
-border:0;
+#login_submit:hover, #signup_submit:hover {
+    background:#bc1e28;
 }
 
-/*ask phil what :focus does*/
+
 #login_submit:hover, #login_submit:focus, #signup_submit:hover, #signup_submit:focus {
     background-position:0 -5px;
     cursor:pointer;
@@ -302,7 +309,7 @@ circle {
 }*/
 
 .ui-slider-handle {
-  background-color: #1abc9c !important;
+  background-color: rgba(0,0,0,.8) !important;
   border-radius: 50%;
   cursor: pointer !important;
   -webkit-backface-visibility: hidden;
@@ -310,7 +317,25 @@ circle {
 }
 
 .ui-slider-handle:hover {
-  background: rgba(0,0,0,.8) !important;
+  background: rgba(0,0,0,.9) !important;
+}
+
+#play-button {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#e6232f;
+    border-style: outset;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.8);
+    padding:4px 10px 5px;
+    font-size:12px;
+    margin:0 5px 0 0;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+#play-button:hover {
+  background:#bc1e28;
 }
 
 /*==============================================================*/
@@ -333,15 +358,36 @@ circle {
 
 .home-link a:hover {
   text-decoration: none;
-  color: #1abc9c;
+  color: rgba(0,0,0,0.9);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*this is the market name on the markets show page*/
+h1 a {
+  color: rgba(0,0,0,.6);
+  font-size: 24px;
+  font-family: Gotham;
+}
+
+h1 a:hover {
+  color: rgba(0,0,0,.8);
+}
+
+.info-market-name {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-family: Gotham;
 }
 
 /* section on left-hand side of page containing detailed information about a market*/
 #info-section {
   width: 420px;
-  margin: 0;
+  margin: 10px;
   padding:0;
-  border: 1px solid red;
+  font-size: 16px;
 }
 
 /* class applied to each label that identifies the pieces of detailed information about the market*/
@@ -350,12 +396,16 @@ circle {
   text-align: right;
   float: left;
   padding-right: 10px;
+  color: rgba(0,0,0,.8);
+  font-family: Gotham;
 }
 
 /* class applied to each piece of detailed information about a single market*/
 .info-data {
   width: 250px;
   float: left;
+  color: rgba(0,0,0,.4);
+  font-family: Gotham;
 }
 
 /* empty p-tags facilitate spacing for address, need height, change if line height changes*/
@@ -363,12 +413,24 @@ circle {
   height: 17px;
 }
 
-#favorites-button-show-page {
-  /*float: left;*/
+#favorites-button-show-page, #get-directions-button {
+  color: rgba(0,0,0,.6);
+  margin-top: 10px;
 }
 
-#get-directions-button {
+.user-profile {
+  font-family: Gotham;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 24px;
+  color: rgba(0,0,0,.8);
+}
 
+#favorite-list {
+  margin: 10px 0;
+  font-family: Gotham;
+  font-size: 18px;
+  color: rgba(0,0,0,.6);
 }
 
 .cf:before,

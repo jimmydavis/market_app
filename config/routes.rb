@@ -6,6 +6,7 @@ MarketApp::Application.routes.draw do
   post '/login' => "session#create"
   get '/logout' => "session#destroy"
   get '/dashboard' => "users#show"
+  get '/markets' => 'welcome#index'
 
   resources :users
   resources :markets

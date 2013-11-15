@@ -1,15 +1,21 @@
+<div class="home-link"><a href="/">nyc farmers markets</a></div>
+
 <!-- We can make this a jQuery fade in and fade out notice saying something like "Successfuly updated" -->
 <p id="notice"></p>
 
-<p>
-  <b>Hi, </b>
-  <%= @user.email %>
-</p>
+<div class="user-profile">
+  <p>
+    <b>Hi, </b>
+    <%= @user.email %>
+  </p>
+
+  <section id="favorite-list">My favorites:</section>
+
+  <div class="favorites"></div>
+</div>
 
 
-<section id="favorite-list">FAVORITES</section>
 
-<div class="favorites"></div>
 
 
 
