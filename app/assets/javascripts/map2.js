@@ -28,8 +28,9 @@ d3.json("boroughs.json", function(error, data) {
 
         d3.json("/markets.json", function(error, data) {
             console.log(data);
+            allMarkets = data;
             group.selectAll(".circle")
-                .data(data)
+                .data(data[3])
                 .enter()
                 .append("circle")
                 .attr("class", "circle")
@@ -43,7 +44,7 @@ d3.json("boroughs.json", function(error, data) {
                 .attr("opacity", "0.1")
                 .style("fill", "#ffffff");
 
-                    // creates the slider element on the page, must background-color css to see
+                    // creates the slider
                     $( "#slider" ).slider({
                         value: 1, //TODO this will be current date
                         min: 1,
@@ -54,17 +55,14 @@ d3.json("boroughs.json", function(error, data) {
                           setSlide(ui.value);
                         }
                       });
-
                     // Creates the slide function that will update what circle elements are displayed on the map
-                    function setSlide(dayValue) {
-                        group.selectAll(".circle")
-                            .data(data);
+                    function setSlide(i) {
+                        debugger;
+                        $("#slider").slider("value", i);
+                        currentPosition = i;
+                        marketsThisDay = data[i];
                     }
 
-                    // function setSlide(i) {
-                    //     $("#slider").slider("value",i);
-                    //     currentSlide = i;
-                    // }
 
                     // THIS CODE SELECTS THE CIRCLES BASED ON THE DATA_OPEN VALUE
                     // group.selectAll(".circle")[0]
