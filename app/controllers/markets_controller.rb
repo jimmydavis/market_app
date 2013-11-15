@@ -8,7 +8,7 @@
     @markets = Market.all_markets
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html {redirect_to root_path}
       format.json { render json: @markets }
     end
   end

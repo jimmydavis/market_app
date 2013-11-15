@@ -1,6 +1,16 @@
 var width = 650,
     height = 800;
 
+var currentPosition = 1;
+
+var boroughs =
+[
+    {"name": "Manhattan", "lat": 40.752556,"lon": -73.977774},
+    {"name": "Brooklyn", "lat": 40.684381,"lon": -73.977452},
+    {"name": "Bronx", "lat": 40.837049, "lon": -73.865430},
+    {"name": "Queens", "lat": 40.751212, "lon": -73.903649}
+];
+
 var svg = d3.select("#map-canvas").append("svg")
     .attr("width", width)
     .attr("height", height);
@@ -47,7 +57,6 @@ d3.json("boroughs.json", function(error, data) {
                         slide: function( event, ui ){
 
                         $("label[for=date]").text(ui.value);
-
 
                         var mkt = group.selectAll(".circle")
                             .data(allMarkets[ui.value]);
@@ -101,7 +110,6 @@ d3.json("boroughs.json", function(error, data) {
                         //         if (d.date_open === )
                         //     });
 
-                        $("#slider").slider("value", i);
                         currentPosition = i;
                         marketsThisDay = data[i];
                     }
@@ -116,24 +124,45 @@ d3.json("boroughs.json", function(error, data) {
     });
 
 
-
+    // group.selectAll(".boroughs")
+    //     .data(boroughs)
+    //     .enter()
+    //     .append("text")
+    //     .attr("x", function(d) { return projection[d.lon, d.lat][0]; })
+    //     .attr("y", function(d) { return projection[d.lon, d.lat][1]; })
+    //     .attr("class", "boroughs")
+    //     .text( function(d) { return d.name })
+    //     .style("color", "rgba(0,0,0,.8");
 });
 
-        // function to pull markets that are open by week
-        // d3.json("fake_data.json", function(error, data) {
-        //         // group.selectAll("circle")
-        //         console.log(data)
-                // .data(data)
-                // .enter()
-                // .append("circle")
-                // .attr("cx", function(d) {
-                //         return projection([d.longitude, d.latitude])[0];
-                // })
-                // .attr("cy", function(d) {
-                //         return projection([d.longitude, d.latitude])[1];
-                // })
-                // .attr("r", 10)
-                // .attr("opacity", ".5")
-                // .style("fill", "#2c344a");
 
 
+var playInterval;
+var autoRewind = true;
+
+// Thank you to the guy who created this — http://jsfiddle.net/amcharts/ZPqhP/
+$('#play-button').click(
+function(){
+  if (playInterval !== undefined){
+      clearInterval(playInterval);
+      playInterval = undefined;
+      $(this).html("play");
+      return;
+    }
+  $(this).html("pause");
+  playInterval = setInterval(function(){
+    currentPosition++;
+    if (currentPosition > 365){
+      if (autoRewind){
+        currentPosition = 1;
+      }
+      else {
+        clearInterval(playInterval);
+        return;
+      }
+    }
+    setSlide(currentPosition);
+  }, 1000);
+});
+
+// thank you function!
