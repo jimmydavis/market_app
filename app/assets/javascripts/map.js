@@ -1,27 +1,76 @@
-// var googleMap = googleMap || {};
+var googleMap = googleMap || {};
+
+var mkt = {};
+
+// ajax request
+googleMap.getMarket = function() {
+
+    $.ajax({
+    dataType: "json",
+    type: "GET",
+    url: window.location.pathname
+    }).done(function(data){
+        mkt = data;
+        console.log(mkt.latitude);
+        googleMap.createMap();
+        googleMap.addPin();
+    });
+};
 
 // // creates a nyc map after dom load
-// googleMap.createMap = function() {
+googleMap.createMap = function() {
 
-//   var mapOptions = {
-//     center: new google.maps.LatLng(40.7397346, -73.9897422),
-//     zoom: 12,
-//     mapTypeId: google.maps.MapTypeId.ROADMAP,
-//     styles: [
-//     {featureType:'road',elementType:'geometry',stylers:[{'visibility':'simplified'}]},
-//     {featureType:'road.arterial',stylers:[{hue:149},{saturation:-78},{lightness:0}]},
-//     {featureType:'road.highway',stylers:[{hue:-31},{saturation:-40},{lightness:2.8}]},
-//     {featureType:'poi',elementType:'label',stylers:[{'visibility':'off'}]},
-//     {featureType:'landscape',stylers:[{hue:163},{saturation:-26},{lightness:-1.1}]},
-//     {featureType:'transit',stylers:[{'visibility':'off'}]},
-//     {featureType:'water',stylers:[{hue:3},{saturation:-24.24},
-//     {lightness:-38.57}]}
-//     ]
-//   };
+  var mapOptions = {
+    center: new google.maps.LatLng(mkt.latitude, mkt.longitude),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    // styles: [
+    //     {featureType:'road',elementType:'geometry',stylers:[{'visibility':'simplified'}]},
+    //     {featureType:'road.arterial',stylers:[{hue:149},{saturation:-78},{lightness:0}]},
+    //     {featureType:'road.highway',stylers:[{hue:-31},{saturation:-40},{lightness:2.8}]},
+    //     {featureType:'poi',elementType:'label',stylers:[{'visibility':'off'}]},
+    //     {featureType:'landscape',stylers:[{hue:163},{saturation:-26},{lightness:-1.1}]},
+    //     {featureType:'transit',stylers:[{'visibility':'off'}]},
+    //     {featureType:'water',stylers:[{hue:3},{saturation:-24.24},
+    //     {lightness:-38.57}]}
+    // ]
+        styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
+  };
 
-//   map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  map = new google.maps.Map(document.getElementById("gmap-canvas"), mapOptions);
 
-// };
+};
+
+
+// need a market_id for a specific market
+// get that data
+
+
+
+googleMap.addPin = function() {
+
+// adds a location for each market and gives it some attributes
+//       var marketLatLng = new google.maps.LatLng(market.latitude, market.longitude);
+//       var marker = new google.maps.Marker({
+//         position: marketLatLng,
+//         title: marketName + ": " + marketLocation
+//       });
+
+    var mktLatLng = new google.maps.LatLng(mkt.latitude, mkt.longitude);
+    var marker = new google.maps.Marker({
+        position: mktLatLng,
+        title: mkt.market_name
+    });
+
+    marker.setMap(map);
+
+};
+
+
+
+$(document).ready(function() {
+    googleMap.getMarket();
+});
 
 // // adds pins to the map for each of the market points
 // googleMap.addPins = function() {
@@ -60,7 +109,7 @@
 //                       );
 //         $("#favorite-button").on("click", function(e){
 //           var favData = { user_id: $("#favorite-button").data("user_id"), market_id: marketId };
-//           debugger
+//
 //           $.ajax({
 //             dataType: "json",
 //             type: "POST",
