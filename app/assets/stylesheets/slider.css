@@ -164,15 +164,15 @@ body .ui-tooltip {
 }
 .ui-widget-content {
   border: 1px solid white;
-  background: #ffffff  ;
-  color: #222222  ;
+  background: #ffffff Â ;
+  color: #222222 Â ;
 }
 .ui-widget-content a {
-  color: #222222  ;
+  color: #222222 Â ;
 }
 
 .ui-widget-header a {
-  color: #222222  ;
+  color: #222222 Â ;
 }
 
 /* Interaction states
@@ -183,12 +183,12 @@ body .ui-tooltip {
 
   background: #888;
   font-weight: normal;
-  color: #555555  ;
+  color: #555555 Â ;
 }
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
-  color: #555555  ;
+  color: #555555 Â ;
   text-decoration: none;
 }
 .ui-state-hover,
@@ -205,20 +205,20 @@ body .ui-tooltip {
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
 .ui-state-hover a:visited {
-  color: #212121  ;
+  color: #212121 Â ;
   text-decoration: none;
 }
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-  background: #ffffff  ;
+  background: #ffffff Â ;
   font-weight: normal;
-  color: #212121  ;
+  color: #212121 Â ;
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-  color: #212121  ;
+  color: #212121 Â ;
   text-decoration: none;
 }
 
@@ -227,29 +227,29 @@ body .ui-tooltip {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-  background: #fbf9ee  ;
-  color: #363636  ;
+  background: #fbf9ee Â ;
+  color: #363636 Â ;
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
-  color: #363636  ;
+  color: #363636 Â ;
 }
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-  background: #fef1ec  ;
-  color: #cd0a0a  ;
+  background: #fef1ec Â ;
+  color: #cd0a0a Â ;
 }
 .ui-state-error a,
 .ui-widget-content .ui-state-error a,
 .ui-widget-header .ui-state-error a {
-  color: #cd0a0a  ;
+  color: #cd0a0a Â ;
 }
 .ui-state-error-text,
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
-  color: #cd0a0a  ;
+  color: #cd0a0a Â ;
 }
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
@@ -303,14 +303,14 @@ body .ui-tooltip {
 */
 /* Overlays */
 .ui-widget-overlay {
-  background: #aaaaaa  ;
+  background: #aaaaaa Â ;
   opacity: .3;
   filter: Alpha(Opacity=30);
 }
 .ui-widget-shadow {
   margin: -8px 0 0 -8px;
   padding: 8px;
-  background: #aaaaaa  ;
+  background: #aaaaaa Â ;
   opacity: .3;
   filter: Alpha(Opacity=30);
   border-radius: 8px;

@@ -6,6 +6,7 @@ var svg = d3.select("#map-canvas").append("svg")
     .attr("height", height);
 
 d3.json("boroughs.json", function(error, data) {
+
     // console.log(data);
     var group = svg.selectAll("g")
     // take data and objects nyc boros and take that features property for that
@@ -26,11 +27,16 @@ d3.json("boroughs.json", function(error, data) {
         .attr("class", "area")
         .attr("fill", "#7A8B8B");
 
+
+
         d3.json("/markets.json", function(error, data) {
+
             console.log(data);
             allMarkets = data;
-            // debugger;
 
+
+
+                    console.log("I am setting the slider stuffs");
 
                     // creates the slider
                     $( "#slider" ).slider({
@@ -40,8 +46,13 @@ d3.json("boroughs.json", function(error, data) {
                         step: 1,
                         slide: function( event, ui ){
 
+                        $("label[for=date]").text(ui.value);
+
+
                         var mkt = group.selectAll(".circle")
                             .data(allMarkets[ui.value]);
+
+                        $(".circle").remove();
 
                         mkt.enter()
                             .append("circle")
@@ -52,16 +63,43 @@ d3.json("boroughs.json", function(error, data) {
                             .attr("cy", function(d) {
                                     return projection([d.longitude, d.latitude])[1];
                             })
+                            // .attr("r", 12)
                             .attr("r", 12)
-                            .attr("opacity", "0.6")
-                            .style("fill", "#ffffff");
+                            .attr("opacity", "0.25")
+                            .style("fill", "#ffffff")
+                            .text(function(d) { return d.market_name })
 
-                        mkt.exit().remove();
+
+                            // click event listener for each market's
+                            .on("click", function(d) {
+
+                                d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
+
+                                var mktName = d;
+                                d3.select(this).style("fill", null);
+                                $(".market").fadeOut(500, function() {
+                                        d3.select(".market")
+                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+                                            $(".market").fadeIn(500);
+                                    });
+                            });
+
+
+                        // mkt.exit().remove();
+
+
+
 
                         }
                       });
                     // Creates the slide function that will update what circle elements are displayed on the map
                     function setSlide(i) {
+
+                        // group.selectAll(".circle")
+                        //     .data(allMarkets)
+                        //     .attr("r", function(d) {
+                        //         if (d.date_open === )
+                        //     });
 
                         $("#slider").slider("value", i);
                         currentPosition = i;
@@ -75,19 +113,6 @@ d3.json("boroughs.json", function(error, data) {
 
 
 
-            // click event listener for each market's
-            d3.selectAll(".circle")
-                .on("click", function(d) {
-                    d3.selectAll(".circle").style("fill", "#1abc9c");
-                    d3.select(this)
-                        .style("fill", null);
-                        $(".market").fadeOut(500, function() {
-                            d3.select(".market")
-                                .html(d.market_name + "<br>" + d.neighborhood + "<br>" + d.operation_hours + "<br>" + d.operation_season + "<br>" + "<a href=" + "/markets/" + d.markets_id + ">More info ...</a>");
-                                $(".market").fadeIn(500);
-                        });
-
-        });
     });
 
 
