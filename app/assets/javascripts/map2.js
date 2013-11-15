@@ -29,20 +29,8 @@ d3.json("boroughs.json", function(error, data) {
         d3.json("/markets.json", function(error, data) {
             console.log(data);
             allMarkets = data;
-            group.selectAll(".circle")
-                .data(data[3])
-                .enter()
-                .append("circle")
-                .attr("class", "circle")
-                .attr("cx", function(d) {
-                        return projection([d.longitude, d.latitude])[0];
-                })
-                .attr("cy", function(d) {
-                        return projection([d.longitude, d.latitude])[1];
-                })
-                .attr("r", 12)
-                .attr("opacity", "0.1")
-                .style("fill", "#ffffff");
+            // debugger;
+
 
                     // creates the slider
                     $( "#slider" ).slider({
@@ -51,13 +39,30 @@ d3.json("boroughs.json", function(error, data) {
                         max: 365,
                         step: 1,
                         slide: function( event, ui ){
-                            console.log(ui.value);
-                          setSlide(ui.value);
+
+                        var mkt = group.selectAll(".circle")
+                            .data(allMarkets[ui.value]);
+
+                        mkt.enter()
+                            .append("circle")
+                            .attr("class", "circle")
+                            .attr("cx", function(d) {
+                                    return projection([d.longitude, d.latitude])[0];
+                            })
+                            .attr("cy", function(d) {
+                                    return projection([d.longitude, d.latitude])[1];
+                            })
+                            .attr("r", 12)
+                            .attr("opacity", "0.6")
+                            .style("fill", "#ffffff");
+
+                        mkt.exit().remove();
+
                         }
                       });
                     // Creates the slide function that will update what circle elements are displayed on the map
                     function setSlide(i) {
-                        debugger;
+
                         $("#slider").slider("value", i);
                         currentPosition = i;
                         marketsThisDay = data[i];
