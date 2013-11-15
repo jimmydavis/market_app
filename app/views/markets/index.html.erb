@@ -1,3 +1,5 @@
+<div class="home-link"><a href="/">nyc farmers markets</a></div>
+
 <% @markets.each do |market| %>
   <li><a href="<%= market.market_link %>"><%= market.market_name %></a>, <%= market.location %></li><br>
 <% end %>

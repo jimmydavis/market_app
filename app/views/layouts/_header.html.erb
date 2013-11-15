@@ -5,8 +5,7 @@
         <!--  <div id="container"> -->
         <!-- TODO : if current_user, show links to FAVORITES AND LOG OUT if current_user, else show SIGN UP and LOGIN  -->
         <% if current_user %>
-          <%= link_to "VIEW ALL MARKETS", "/markets"  %>
-          <%= link_to "FAVORITES", current_user  %>
+          <%= link_to "FAVORITES", current_user  %> |
           <!-- right now there is no logout -->
           <%= link_to "LOG OUT", "/logout" %>
         <% else %>
