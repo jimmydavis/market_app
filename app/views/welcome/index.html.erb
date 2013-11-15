@@ -6,14 +6,14 @@
     <div class="info-text">
       <h2><a href="/">nyc farmers markets</a></h2>
       <p>
-        The circles show the locations of farmers' markets in the New York City area in 2013.  Click a circle to view more information about that market.</p>
+        The map shows the locations of farmers' markets in the New York City area in 2013.  When you drag or play the slider, the map will display a number of circles indicating farmers' markets that are open for service on that particular day.  Click a circle to view more information about that market.</p>
     </div>
 
 
     <div class="market"></div>
     <button class="hidden" data-user_id="<%= current_user.try(:id) %>" id="favorite-button">Add to Favorites</button>
     <p>
-      <label for="date">Day #:</label>
+      <label for="date"></label>
       <input type="text" id="date" style="border: 0; color: #f6931f; font-weight: bold;" />
     </p>
     <div id="slider-wrap">
@@ -21,7 +21,7 @@
 
       <p>Drag the slider or click "PLAY" <br> to progress through the year</p>
 
-      <button id="play-button">PLAY</button>
+      <button id="play-button">play</button>
       <div id="slider"></div>
     </div>
   </div>

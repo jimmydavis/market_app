@@ -19,7 +19,7 @@ var svg = d3.select("#map-canvas").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("boroughs.json", function(error, data) {
+d3.json("/boroughs.json", function(error, data) {
 
     // console.log(data);
     var group = svg.selectAll("g")
@@ -83,13 +83,23 @@ d3.json("boroughs.json", function(error, data) {
                         var mktName = d;
                         d3.select(this).style("fill", null);
 
-                        $(".market").fadeOut(500, function() {
-                                d3.select(".market")
-                                    .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
-                                    $(".market").fadeIn(500);
-                        });
-                    });
-            }
+            //             $(".market").fadeOut(500, function() {
+            //                     d3.select(".market")
+            //                         .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+            //                         $(".market").fadeIn(500);
+            //             });
+            //         });
+            // }
+                                d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
+
+                                var mktName = d;
+                                d3.select(this).style("fill", null);
+                                $(".market").fadeOut(500, function() {
+                                        d3.select(".market")
+                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info...</a>");
+                                            $(".market").fadeIn(500);
+                                    });
+                            });
 
                     // creates the slider
                     $( "#slider" ).slider({
@@ -152,3 +162,6 @@ d3.json("boroughs.json", function(error, data) {
 
 
 // thank you function!
+function thankyou() {
+    console.log("Thanks to those who were generous with their time and guidance, especially Larry Buchanan, TC McCarthy, and of course, our WDI instructors.");
+}

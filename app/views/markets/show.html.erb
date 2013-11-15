@@ -1,18 +1,32 @@
-<div class="home-link"><a href="/">nyc farmers markets</a></div>
+<div class="market-show">
+  <div class="home-link"><a href="/">nyc farmers markets</a></div>
 
-<h1 class="info-market-name"><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1>
-<section id="info-section">
-  <p class="info-labels">Hours of Operation:</p>
-    <p class="info-data"><%= @market.operation_hours %></p>
-  <p class="info-labels">Operation season:</p>
-    <p class="info-data"><%= @market.operation_season %></p>
-  <p class="info-labels">Address:</p>
-    <p class="info-data"><%= @market.address_line_1 %></p>
-  <p class="info-labels empty-ptag"></p>
-    <p class="info-data"><%= @market.city %>, <%= @market.state %> <%= @market.zip_code %></p>
+  <div class="market-show-lhb">
+    <h1 class="info-market-name"><a href="<%= @market.market_link %>"><%= @market.market_name %></a></h1>
+    <section id="info-section">
+      <p class="info-labels">Hours of Operation:</p>
+        <p class="info-data"><%= @market.operation_hours %></p>
+      <p class="info-labels">Operation season:</p>
+        <p class="info-data"><%= @market.operation_season %></p>
+      <p class="info-labels">Address:</p>
+        <p class="info-data"><%= @market.address_line_1 %></p>
+      <p class="info-labels empty-ptag"></p>
+        <p class="info-data"><%= @market.city %>, <%= @market.state %> <%= @market.zip_code %></p>
+      <p><a href="#" id="favorites-button-show-page">Add to Favorites</a></p>
+    </section>
+  </div>
 
-  <a href="#" id="favorites-button-show-page">Add to Favorites</a>
+
+<% if current_user %>
+  <button id="favorites-button-show-page">Add to Favorites</button>
+<% end %>
 
 
 </section>
 
+  <div class="gmap-container">
+    <div id="gmap-canvas"></div>
+  </div>
+
+
+</div>
