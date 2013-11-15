@@ -227,7 +227,7 @@ footer {
     margin-top:5px;
     margin-right: 0px;
     color:rgba(0,0,0,0.8);
-    font-size:11px;
+    font-size:16px;
 }
 
 #login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password], #login_menu input[type=email], #signup_menu input[type=email] {
@@ -235,7 +235,7 @@ footer {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     /*border:1px solid #e6232f*/;
-    font-size:13px;
+    font-size:12px;
     margin:0 0 5px;
     padding:5px;
     width:203px;
@@ -245,26 +245,20 @@ footer {
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     background:#e6232f;
-}
-
-#login_submit, #signup_submit {
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
     border-style: outset;
     color:#fff;
     text-shadow:0 -1px 0 rgba(0,0,0,0.8);
     padding:4px 10px 5px;
-    font-size:11px;
+    font-size:12px;
     margin:0 5px 0 0;
     font-weight:bold;
 }
 
-#login_submit::-moz-focus-inner {
-padding:0;
-border:0;
+#login_submit:hover, #signup_submit:hover {
+    background:#bc1e28;
 }
 
-/*ask phil what :focus does*/
+
 #login_submit:hover, #login_submit:focus, #signup_submit:hover, #signup_submit:focus {
     background-position:0 -5px;
     cursor:pointer;
@@ -289,7 +283,7 @@ circle {
   font-weight: 800;
   font-size: 11px;
   letter-spacing: .15em;
-  padding: 10px 0 3px 0;
+  padding: 10px 0 10px 0;
   margin-bottom: 15px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -324,6 +318,24 @@ circle {
 
 .ui-slider-handle:hover {
   background: rgba(0,0,0,.9) !important;
+}
+
+#play-button {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#e6232f;
+    border-style: outset;
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.8);
+    padding:4px 10px 5px;
+    font-size:12px;
+    margin:0 5px 0 0;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+#play-button:hover {
+  background:#bc1e28;
 }
 
 /*==============================================================*/
