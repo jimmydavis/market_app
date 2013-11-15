@@ -18,7 +18,7 @@ class Market < ActiveRecord::Base
       end
 
       markets.each do |market|
-        date_string = market.date_open]
+        date_string = market.date_open
         date = Date.parse(date_string)
         if date.year == 2013
           day_of_the_year = date.yday
