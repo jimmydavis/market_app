@@ -5,10 +5,10 @@ var currentPosition = 1;
 
 var boroughs =
 [
-    {"name": "Manhattan", "lat": 40.752556,"lon": -73.977774},
-    {"name": "Brooklyn", "lat": 40.684381,"lon": -73.977452},
-    {"name": "Bronx", "lat": 40.837049, "lon": -73.865430},
-    {"name": "Queens", "lat": 40.751212, "lon": -73.903649}
+    {"name": "MANHATTAN", "lat": 40.792556, "lon": -73.997774},
+    {"name": "BROOKLYN", "lat": 40.644381,"lon": -73.977452},
+    {"name": "BRONX", "lat": 40.837049, "lon": -73.895430},
+    {"name": "QUEENS", "lat": 40.721212, "lon": -73.853649}
 ];
 
 var svg = d3.select("#map-canvas").append("svg")
@@ -124,15 +124,16 @@ d3.json("/boroughs.json", function(error, data) {
     });
 
 
-    // group.selectAll(".boroughs")
-    //     .data(boroughs)
-    //     .enter()
-    //     .append("text")
-    //     .attr("x", function(d) { return projection[d.lon, d.lat][0]; })
-    //     .attr("y", function(d) { return projection[d.lon, d.lat][1]; })
-    //     .attr("class", "boroughs")
-    //     .text( function(d) { return d.name })
-    //     .style("color", "rgba(0,0,0,.8");
+    group.selectAll(".boroughs")
+
+        .data(boroughs)
+        .enter()
+        .append("text")
+        .attr("x", function(d) { return projection([d.lon, d.lat])[0]; } )
+        .attr("y", function(d) { return projection([d.lon, d.lat])[1]; } )
+        .attr("class", "boroughs")
+        .text( function(d){return d.name;} );
+
 });
 
 

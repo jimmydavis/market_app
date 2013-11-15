@@ -96,6 +96,11 @@ footer {
   width: 700px;
 }
 
+.boroughs {
+  font-family: 'langdonregular';
+  color: rgba(0,0,0,.8);
+}
+
 /*==============================================================*/
 /*this is the login/signup/login links within nav*/
 /*==============================================================*/
