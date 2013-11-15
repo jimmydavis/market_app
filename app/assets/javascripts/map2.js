@@ -166,3 +166,6 @@ function(){
 });
 
 // thank you function!
+function thankyou() {
+    console.log("Thanks to those who were generous with their time and guidance, especially Larry Buchanan, TC McCarthy, and of course, our WDI instructors.");
+}
