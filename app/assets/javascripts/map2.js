@@ -83,23 +83,23 @@ d3.json("/boroughs.json", function(error, data) {
                         var mktName = d;
                         d3.select(this).style("fill", null);
 
-            //             $(".market").fadeOut(500, function() {
-            //                     d3.select(".market")
-            //                         .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
-            //                         $(".market").fadeIn(500);
-            //             });
-            //         });
-            // }
-                                d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
+                        $(".market").fadeOut(500, function() {
+                                d3.select(".market")
+                                    .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+                                    $(".market").fadeIn(500);
+                        });
+                    });
+            }
+                            //     d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
 
-                                var mktName = d;
-                                d3.select(this).style("fill", null);
-                                $(".market").fadeOut(500, function() {
-                                        d3.select(".market")
-                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info...</a>");
-                                            $(".market").fadeIn(500);
-                                    });
-                            });
+                            //     var mktName = d;
+                            //     d3.select(this).style("fill", null);
+                            //     $(".market").fadeOut(500, function() {
+                            //             d3.select(".market")
+                            //                 .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info...</a>");
+                            //                 $(".market").fadeIn(500);
+                            //         });
+                            // });
 
                     // creates the slider
                     $( "#slider" ).slider({
@@ -153,10 +153,6 @@ d3.json("/boroughs.json", function(error, data) {
         }
 
 
-    });
-});
-
-
     group.selectAll(".boroughs")
 
         .data(boroughs)
@@ -167,7 +163,13 @@ d3.json("/boroughs.json", function(error, data) {
         .attr("class", "boroughs")
         .text( function(d){return d.name;} );
 
+    });
 });
+
+
+
+
+
 
 
 // thank you function!
