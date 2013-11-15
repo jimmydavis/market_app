@@ -1,7 +1,10 @@
 var width = 650,
     height = 800;
 
-var currentPosition = 1;
+var startDate = new Date(2012,11,31);
+var currentDate = new Date();
+var currentPosition = Math.floor((currentDate - startDate) / 86400000);
+$("label[for=date]").text(moment(currentDate).format("dddd, MMMM Do YYYY"));
 
 var boroughs =
 [
@@ -44,19 +47,18 @@ d3.json("boroughs.json", function(error, data) {
             console.log(data);
             allMarkets = data;
 
-
-
-                    console.log("I am setting the slider stuffs");
-
                     // creates the slider
                     $( "#slider" ).slider({
-                        value: 1, //TODO this will be current date
+                        value: currentPosition,
                         min: 1,
                         max: 365,
                         step: 1,
                         slide: function( event, ui ){
 
-                        $("label[for=date]").text(ui.value);
+
+                        var currentDate = moment(startDate).add('days', ui.value);
+
+                        $("label[for=date]").text(moment(currentDate).format("dddd, MMMM Do YYYY"));
 
                         var mkt = group.selectAll(".circle")
                             .data(allMarkets[ui.value]);
@@ -101,38 +103,7 @@ d3.json("boroughs.json", function(error, data) {
 
                         }
                       });
-                    // Creates the slide function that will update what circle elements are displayed on the map
-                    function setSlide(i) {
-
-                        // group.selectAll(".circle")
-                        //     .data(allMarkets)
-                        //     .attr("r", function(d) {
-                        //         if (d.date_open === )
-                        //     });
-
-                        currentPosition = i;
-                        marketsThisDay = data[i];
-                    }
-
-
-                    // THIS CODE SELECTS THE CIRCLES BASED ON THE DATA_OPEN VALUE
-                    // group.selectAll(".circle")[0]
-                    // foo[0].__data__.date_open
-
-
-
     });
-
-
-    // group.selectAll(".boroughs")
-    //     .data(boroughs)
-    //     .enter()
-    //     .append("text")
-    //     .attr("x", function(d) { return projection[d.lon, d.lat][0]; })
-    //     .attr("y", function(d) { return projection[d.lon, d.lat][1]; })
-    //     .attr("class", "boroughs")
-    //     .text( function(d) { return d.name })
-    //     .style("color", "rgba(0,0,0,.8");
 });
 
 
@@ -162,7 +133,17 @@ function(){
       }
     }
     setSlide(currentPosition);
-  }, 1000);
+  }, 100);
 });
+
+function setSlide(i) {
+
+   $( "#slider" ).slider( "value", i );
+        currentPosition = i;
+
+    currentPosition = i;
+    marketsThisDay = data[i];
+}
+
 
 // thank you function!
