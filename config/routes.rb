@@ -5,9 +5,11 @@ MarketApp::Application.routes.draw do
   get '/login'  => "session#new"
   post '/login' => "session#create"
   get '/logout' => "session#destroy"
+  get '/signup' => "users#new"
   get '/dashboard' => "users#show"
 
-
+  # get '/users/:id' => "users#show"
+  # get '/markets/:id' => "markets#show"
   resources :users
   resources :markets
 

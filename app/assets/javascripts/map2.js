@@ -88,7 +88,7 @@ d3.json("boroughs.json", function(error, data) {
                                 d3.select(this).style("fill", null);
                                 $(".market").fadeOut(500, function() {
                                         d3.select(".market")
-                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info...</a>");
                                             $(".market").fadeIn(500);
                                     });
                             });

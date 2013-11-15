@@ -1,6 +1,6 @@
 <div class="home-link"><a href="/">nyc farmers markets</a></div>
 
-<!-- We can make this a jQuery fade in and fade out notice saying something like "Successfuly updated" -->
+<!-- jQuery fade in and fade out all notices -->
 <p id="notice"></p>
 
 <div class="user-profile">
@@ -9,19 +9,16 @@
     <%= @user.email %>
   </p>
 
-  <section id="favorite-list">My favorites:</section>
+  <section id="favorite-list">My favorite markets:</section>
 
-  <div class="favorites"></div>
+  <div class="favorites">
+
+  </div>
+
 </div>
 
-
-
-
-
-
-
-
-
+<div class="delete-account"><%= link_to 'Delete Account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
 <%#= link_to 'Edit', edit_user_path(@user) %>
 <%#= link_to 'Back', users_path %>
-<%#= link_to 'Delete Account', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+
