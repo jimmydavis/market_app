@@ -34,6 +34,7 @@
   line-height: 1.4;
 }
 
+
 footer {
   clear: both;
   display:block;
@@ -49,6 +50,13 @@ footer {
   font-size: 12px;
   float: right;
   margin: 10px 300px;
+  color: #ffffff;
+}
+
+.made-by {
+  font-size: 12px;
+  float: left;
+  margin: 10px 10px;
   color: #ffffff;
 }
 
@@ -74,7 +82,9 @@ footer {
 #notice_container {
   width: 100%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #CFC;
+  text-align: center;
+  font-size: 20px;
 }
 
 #flash_notice {
@@ -178,8 +188,9 @@ footer {
 
 .market a {
   text-decoration:none;
-  color:#1abc9c;
+  color: rgba(0,0,0,0.6);
 }
+
 
 /*==============================================================*/
  /*THIS BEGINS CODE FOR login DROPDOWN*/
@@ -235,7 +246,7 @@ footer {
     font-size:16px;
 }
 
-#login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password], #login_menu input[type=email], #signup_menu input[type=email] {
+#login_menu input[type=text], #login_menu input[type=password], #signup_menu input[type=text], #signup_menu input[type=password], #login_menu input[type=email], #signup_menu input[type=email], #login_form input[type=text], #login_form input[type=password], #login_form input[type=email], #signup_form input[type=text], #signup_form input[type=password], #signup_form input[type=email] {
     display:block;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
@@ -314,7 +325,7 @@ circle {
 }*/
 
 .ui-slider-handle {
-  background-color: rgba(0,0,0,.8) !important;
+  background-color: #4c4c4c !important;
   border-radius: 50%;
   cursor: pointer !important;
   -webkit-backface-visibility: hidden;
@@ -322,7 +333,7 @@ circle {
 }
 
 .ui-slider-handle:hover {
-  background: rgba(0,0,0,.9) !important;
+  background: #343434 !important;
 }
 
 #play-button {
@@ -452,6 +463,7 @@ h1 a:hover {
 #favorites-button-show-page, #get-directions-button {
   color: rgba(0,0,0,.6);
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .user-profile {
@@ -466,6 +478,15 @@ h1 a:hover {
   margin: 10px 0;
   font-family: Gotham;
   font-size: 18px;
+  color: rgba(0,0,0,.6);
+}
+
+.delete-account {
+  margin: 400px 0 20px 20px;
+}
+
+.delete-account a {
+  text-decoration: none;
   color: rgba(0,0,0,.6);
 }
 

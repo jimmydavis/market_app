@@ -1,7 +1,11 @@
 var width = 650,
     height = 800;
 
-var currentPosition = 1;
+var sliderPosition = null;
+var startDate = new Date(2012,11,31);
+var currentDate = new Date();
+var currentPosition = Math.floor((currentDate - startDate) / 86400000);
+$("label[for=date]").text(moment(currentDate).format("dddd, MMMM Do YYYY"));
 
 var boroughs =
 [
@@ -44,84 +48,113 @@ d3.json("/boroughs.json", function(error, data) {
             console.log(data);
             allMarkets = data;
 
+            function moveIt(event, ui) {
+                var currentDate = moment(startDate).add('days', ui.value);
+                sliderPosition = ui;
+
+                $("label[for=date]").text(moment(currentDate).format("dddd, MMMM Do YYYY"));
+
+                var mkt = group.selectAll(".circle")
+                    .data(allMarkets[ui.value]);
+
+                $(".circle").remove();
+
+                mkt.enter()
+                    .append("circle")
+                    .attr("class", "circle")
+                    .attr("cx", function(d) {
+                            return projection([d.longitude, d.latitude])[0];
+                    })
+                    .attr("cy", function(d) {
+                            return projection([d.longitude, d.latitude])[1];
+                    })
+                    // .attr("r", 12)
+                    .attr("r", 12)
+                    .attr("opacity", "0.25")
+                    .style("fill", "#ffffff")
+                    .text(function(d) { return d.market_name })
 
 
-                    console.log("I am setting the slider stuffs");
+                    // click event listener for each market's
+                    .on("click", function(d) {
 
-                    // creates the slider
-                    $( "#slider" ).slider({
-                        value: 1, //TODO this will be current date
-                        min: 1,
-                        max: 365,
-                        step: 1,
-                        slide: function( event, ui ){
+                        d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
 
-                        $("label[for=date]").text(ui.value);
+                        var mktName = d;
+                        d3.select(this).style("fill", null);
 
-                        var mkt = group.selectAll(".circle")
-                            .data(allMarkets[ui.value]);
-
-                        $(".circle").remove();
-
-                        mkt.enter()
-                            .append("circle")
-                            .attr("class", "circle")
-                            .attr("cx", function(d) {
-                                    return projection([d.longitude, d.latitude])[0];
-                            })
-                            .attr("cy", function(d) {
-                                    return projection([d.longitude, d.latitude])[1];
-                            })
-                            // .attr("r", 12)
-                            .attr("r", 12)
-                            .attr("opacity", "0.25")
-                            .style("fill", "#ffffff")
-                            .text(function(d) { return d.market_name })
-
-
-                            // click event listener for each market's
-                            .on("click", function(d) {
-
+            //             $(".market").fadeOut(500, function() {
+            //                     d3.select(".market")
+            //                         .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+            //                         $(".market").fadeIn(500);
+            //             });
+            //         });
+            // }
                                 d3.selectAll(".circle").attr("opacity", "0.25").style("fill", "#ffffff");
 
                                 var mktName = d;
                                 d3.select(this).style("fill", null);
                                 $(".market").fadeOut(500, function() {
                                         d3.select(".market")
-                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info ...</a>");
+                                            .html(mktName.market_name + "<br>" + mktName.neighborhood + "<br>" + mktName.operation_hours + "<br> Open " + mktName.operation_season + "<br>" + "<a href=" + "/markets/" + mktName.markets_id + ">More info...</a>");
                                             $(".market").fadeIn(500);
                                     });
                             });
 
+                    // creates the slider
+                    $( "#slider" ).slider({
+                        value: currentPosition,
+                        min: 1,
+                        max: 365,
+                        step: 1,
+                        change: moveIt,
+                        slide: moveIt
 
                         // mkt.exit().remove();
-
-
-
-
-                        }
                       });
-                    // Creates the slide function that will update what circle elements are displayed on the map
-                    function setSlide(i) {
+        var playInterval;
+        var autoRewind = true;
 
-                        // group.selectAll(".circle")
-                        //     .data(allMarkets)
-                        //     .attr("r", function(d) {
-                        //         if (d.date_open === )
-                        //     });
+        // Thank you to the guy who created this — http://jsfiddle.net/amcharts/ZPqhP/
+        $('#play-button').click(
+        function(){
+          // if (sliderPosition !== null)
+          //   currentPosition = sliderPosition;
+          if (playInterval !== undefined){
+              clearInterval(playInterval);
+              playInterval = undefined;
+              $(this).html("play");
+              return;
+            }
+          $(this).html("pause");
+          playInterval = setInterval(function(){
+            currentPosition++;
+            if (currentPosition > 365){
+              if (autoRewind){
+                currentPosition = 1;
+              }
+              else {
+                clearInterval(playInterval);
+                return;
+              }
+            }
+            setSlide(currentPosition);
+          }, 200);
+        });
 
-                        currentPosition = i;
-                        marketsThisDay = data[i];
-                    }
+        function setSlide(i) {
 
+            $slider = $( "#slider" )
+           $slider.slider( "value", i ).trigger('change');
+                currentPosition = i;
 
-                    // THIS CODE SELECTS THE CIRCLES BASED ON THE DATA_OPEN VALUE
-                    // group.selectAll(".circle")[0]
-                    // foo[0].__data__.date_open
-
+            currentPosition = i;
+            marketsThisDay = data[i];
+        }
 
 
     });
+});
 
 
     group.selectAll(".boroughs")
@@ -136,35 +169,6 @@ d3.json("/boroughs.json", function(error, data) {
 
 });
 
-
-
-var playInterval;
-var autoRewind = true;
-
-// Thank you to the guy who created this — http://jsfiddle.net/amcharts/ZPqhP/
-$('#play-button').click(
-function(){
-  if (playInterval !== undefined){
-      clearInterval(playInterval);
-      playInterval = undefined;
-      $(this).html("play");
-      return;
-    }
-  $(this).html("pause");
-  playInterval = setInterval(function(){
-    currentPosition++;
-    if (currentPosition > 365){
-      if (autoRewind){
-        currentPosition = 1;
-      }
-      else {
-        clearInterval(playInterval);
-        return;
-      }
-    }
-    setSlide(currentPosition);
-  }, 1000);
-});
 
 // thank you function!
 function thankyou() {
