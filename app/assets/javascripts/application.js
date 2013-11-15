@@ -18,3 +18,4 @@
 //= require moment.min
 //= require map2.js
 //= require form.js
+//= require map.js

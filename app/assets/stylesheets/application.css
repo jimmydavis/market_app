@@ -366,6 +366,14 @@ a {
 }
 
 /*this is the market name on the markets show page*/
+.market-show {
+  width: 1200px;
+  margin: 0 auto;
+  max-height: 600px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
 h1 a {
   color: rgba(0,0,0,.6);
   font-size: 24px;
@@ -376,11 +384,34 @@ h1 a:hover {
   color: rgba(0,0,0,.8);
 }
 
+.market-show-lhb {
+  width: 450px;
+  height: 500px;
+  float: left;
+}
+
 .info-market-name {
   margin-top: 100px;
   margin-left: 20px;
   font-family: Gotham;
+  float: left;
 }
+
+.gmap-container {
+  height: 300px;
+  width: 500px;
+
+  margin: 0 auto;
+  float: left;
+}
+
+#gmap-canvas {
+  height: 300px;
+  width: 500px;
+  margin: 50px auto;
+
+}
+
 
 /* section on left-hand side of page containing detailed information about a market*/
 #info-section {

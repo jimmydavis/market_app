@@ -15,7 +15,7 @@ var svg = d3.select("#map-canvas").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("boroughs.json", function(error, data) {
+d3.json("/boroughs.json", function(error, data) {
 
     // console.log(data);
     var group = svg.selectAll("g")
